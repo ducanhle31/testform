@@ -1,0 +1,2530 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listing page</title>
+    <!-- nhung font google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="assets/less/style.css">
+    <!-- <link rel="stylesheet" type="text/css" href="assets/less/view/view.css" /> -->
+</head>
+
+<body>
+    <div class="app app__listing">
+        <header id="header">
+            <!-- phan header phia tren -->
+            <div class="header--main row row-center col-between">
+                <!-- phan header ben trai -->
+                <nav class="header--main__nav">
+                    <ul class="row col-between">
+                        <li><a href="">Jewelry</a></li>
+                        <li><a href="">Engagement & Wedding</a></li>
+                        <li><a href="">Fashion & more...</a></li>
+                    </ul>
+                    <!-- header nav tren mobile -->
+                    <div class="header--main__nav--mobile row">
+                        <!-- icon home tren mobile -->
+                        <div id="btn-menu" class="icon__home">
+                            <svg class="icon">
+                                <use xlink:href="sprite.svg#Rectangle home"></use>
+                            </svg>
+                            <svg class="icon">
+                                <use xlink:href="sprite.svg#Rectangle home"></use>
+                            </svg>
+                            <svg class="icon">
+                                <use xlink:href="sprite.svg#Rectangle home"></use>
+                            </svg>
+                        </div>
+                        <!-- icon search tren mobile -->
+                        <div class="extends--icon--search search--mobile row row-center">
+                            <svg class="icon icon--search">
+                                <use xlink:href="sprite.svg#Ellipse 1"></use>
+                            </svg>
+                            <svg class="icon icon--vt3">
+                                <use xlink:href="sprite.svg#Vector 3"></use>
+                            </svg>
+                        </div>
+                    </div>
+                </nav>
+                <!-- phan header logo cty -->
+                <div class="header__logo row col-center">
+                    <svg class="icon icon--text">
+                        <use xlink:href="sprite.svg#VectorG"></use>
+                    </svg>
+
+                    <svg class="icon icon--text">
+                        <use xlink:href="sprite.svg#VectorL"></use>
+                    </svg>
+
+                    <svg class="icon icon--text">
+                        <use xlink:href="sprite.svg#VectorA"></use>
+                    </svg>
+
+                    <svg class="icon icon--text">
+                        <use xlink:href="sprite.svg#VectorM"></use>
+                    </svg>
+
+                    <svg class="icon icon--text">
+                        <use xlink:href="sprite.svg#VectorI"></use>
+                    </svg>
+
+                    <svg class="icon icon--text">
+                        <use xlink:href="sprite.svg#VectorR"></use>
+                    </svg>
+
+                    <svg class="icon icon--text">
+                        <use xlink:href="sprite.svg#VectorA"></use>
+                    </svg>
+                </div>
+                <!-- phan header ben phai -->
+                <div class="header--main__extends row col-between">
+                    <ul class="extends--lang row row-center">
+                        <li><a href="">De</a></li>
+                        <li><a href="">Fr</a></li>
+                        <li><a href="">It</a></li>
+                    </ul>
+                    <!-- phan icon ngoai cung ben phai cua header -->
+                    <ul class="extends--icon row row-center">
+                        <li class="extends--icon--search row row-center">
+                            <svg class="icon icon--search">
+                                <use xlink:href="sprite.svg#Ellipse 1"></use>
+                            </svg>
+                            <svg class="icon icon--vt3">
+                                <use xlink:href="sprite.svg#Vector 3"></use>
+                            </svg>
+                        </li>
+                        <li>
+                            <a class="icon--user" href="">
+                                <svg class="icon icon--user--top">
+                                    <use xlink:href="sprite.svg#Ellipse 1"></use>
+                                </svg>
+                                <svg class="icon icon--user--bottom">
+                                    <use xlink:href="sprite.svg#Ellipse 2"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <svg class="icon icon--heart">
+                                    <use xlink:href="sprite.svg#bordr"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="extends--icon--bag" href="">
+                                <svg class="icon extends--icon--bag--top">
+                                    <use xlink:href="sprite.svg#Rectangle 50"></use>
+                                </svg>
+                                <svg class="icon extends--icon--bag--down">
+                                    <use xlink:href="sprite.svg#Rectangle 248"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- phan header phia dươi -->
+            <nav class="header--sub">
+                <ul class="header--sub__nav row row-center">
+                    <li><a href="./index2.html">Rings</a></li>
+                    <li><a href="">Necklaces</a></li>
+                    <li><a href="">Earings</a></li>
+                    <li><a href="">Brooches</a></li>
+                    <li><a href="">Anklets</a></li>
+                    <li><a href="">Nose pins</a></li>
+                    <li><a href="">Men</a></li>
+                    <li><a href="">Women</a></li>
+                    <li><a href="">Kids</a></li>
+                    <li><a href="">Collections</a></li>
+                </ul>
+            </nav>
+
+            <!-- phan cua menu mobile click menu btn -->
+            <div id="menu--mobile-js" class="menu--mobile">
+                <!-- phan header cua menu -->
+                <div class="menu--mobile__header">
+                    <!-- phan acount khi click menu mobile -->
+                    <div class="menu--mobile__acount row row-center col-between">
+                        <a class="acount row row-center">
+                            <div class="icon--user" href="">
+                                <svg class="icon icon--user--top">
+                                    <use xlink:href="sprite.svg#Ellipse 1"></use>
+                                </svg>
+                                <svg class="icon icon--user--bottom">
+                                    <use xlink:href="sprite.svg#Ellipse 2"></use>
+                                </svg>
+                            </div>
+                            <p>My account</p>
+                        </a>
+                        <ul class="extends--lang row row-center">
+                            <li><a href="">De</a></li>
+                            <li><a href="">Fr</a></li>
+                            <li><a href="">It</a></li>
+                        </ul>
+                        <!-- icon close khi click nut menu -->
+                        <div id="btn-close" class="menu--mobile__header__close grid grid-center">
+                            <svg class="icon--close">
+                                <use xlink:href="sprite.svg#close-header"></use>
+                            </svg>
+                        </div>
+                    </div>
+                    <ul class="menu--mobile__header__nav grid l-4">
+                        <li class="grid grid-center">
+                            <p>Your Jewelry</p>
+                        </li>
+                        <li class="grid grid-center">
+                            <p>Engagement &Wedding</p>
+                        </li>
+                        <li class="grid grid-center">
+                            <p>Fashion &More...</p>
+                        </li>
+                    </ul>
+                </div>
+                <ul class="menu--mobile__header__list main__section--text--link">
+                    <li>
+                        <a href="./index2.html">
+                            Men
+                            <svg class="icon">
+                                <use xlink:href="sprite.svg#Vector 11"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            Women
+                            <svg class="icon">
+                                <use xlink:href="sprite.svg#Vector 11"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            Kids
+                            <svg class="icon">
+                                <use xlink:href="sprite.svg#Vector 11"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            News
+                            <svg class="icon">
+                                <use xlink:href="sprite.svg#Vector 11"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            Style
+                            <svg class="icon">
+                                <use xlink:href="sprite.svg#Vector 11"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+                <!-- phan login -->
+                <a class="login row row-center" href="">
+                    <div class="login__icon row row-center">
+                        <svg class="icon--right">
+                            <use xlink:href="sprite.svg#Rectangle 44"></use>
+                        </svg>
+                        <div class="login__icon--arrow row row-center">
+                            <svg class="icon-23">
+                                <use xlink:href="sprite.svg#Vector 23"></use>
+                            </svg>
+                            <svg class="icon-24">
+                                <use xlink:href="sprite.svg#Vector 24"></use>
+                            </svg>
+                        </div>
+                    </div>
+                    Login
+                </a>
+            </div>
+        </header>
+        <div id="listing" class="mt-80-c mt-80-m mt-32">
+            <!-- phan vi tri cua trang listing -->
+            <div class="listing__post main__section--general">
+                <div class="main__section--text">
+                    <ul class="main__section__post--link row">
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="">
+                                <svg class="icon icon--arrow">
+                                    <use xlink:href="sprite.svg#arrow"></use>
+                                </svg>
+                            </a></li>
+                        <li><a href="">Jewelry</a></li>
+                        <li><a href="">
+                                <svg class="icon icon--arrow">
+                                    <use xlink:href="sprite.svg#arrow"></use>
+                                </svg>
+                            </a></li>
+                        <li><a href="">Engagmenet</a></li>
+                        <li><a href="">
+                                <svg class="icon icon--arrow">
+                                    <use xlink:href="sprite.svg#arrow"></use>
+                                </svg>
+                            </a></li>
+                        <li><a href="">Rings</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- phan gioi thieu chung ve listing -->
+            <div class="listing--general grid grid-row-center c-12 m-12 l-6 mt-20-c mt-60-m mt-60">
+                <div class="listing--general--text__app grid grid-col-center">
+                    <div class="listing--general--text">
+                        <div class="listing--general__title">
+                            <h1>Rings</h1>
+                        </div>
+                        <!-- phan gioi thieu voi chu -->
+                        <div class="listing--general__item--text mt-12-c mt-20-m mt-28">
+                            <nav class="item--text__nav">
+                                <a class="item--text__nav--sale">
+                                    50% off
+                                </a>
+                                <a href="">on all order</a>
+                            </nav>
+                            <p class="mt-12-c mt-20-m mt-28">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                Proin
+                                vel enim
+                                consequat, auctor dolor
+                                nec, </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- phan anh -->
+                <div class="listing--general__image mt-20-c mt-20-m">
+                    <img src="assets/img/img-listing/topiclist.png" alt="image">
+                </div>
+            </div>
+
+            <!-- phan listing voi dieu huong -->
+            <nav class="listing__nav">
+                <ul class="grid grid-row-center c-6 m-6 l-6">
+                    <li class="grid grid-center"><a href="">Styles</a></li>
+                    <li class="grid grid-center"><a href="">Categories</a></li>
+                </ul>
+                <!-- phan list product trong nav -->
+                <div class="listing__nav__product">
+                    <div id="listing__prev" class="prev" onclick="fadeSlidePre(-1)">
+                        <svg class="icon icon--bg">
+                            <use xlink:href="sprite.svg#bg"></use>
+                        </svg>
+                        <svg class="icon icon--vector">
+                            <use xlink:href="sprite.svg#Vector 11"></use>
+                        </svg>
+                    </div>
+                    <div id="listing__next" class="next">
+                        <svg class="icon icon--bg">
+                            <use xlink:href="sprite.svg#bg"></use>
+                        </svg>
+                        <svg class="icon icon--vector">
+                            <use xlink:href="sprite.svg#Vector 11"></use>
+                        </svg>
+                    </div>
+                    <div class="product__app--js mt-12-c mt-12-m mt-12 row row-end">
+                        <a class="product__item product__item--listing-nav" href="">
+                            <img src="assets/img/img-listing/Option 3.png" alt="image">
+                            <span>Side-stone...</span>
+                        </a>
+                        <a class="product__item product__item--listing-nav" href="">
+                            <img src="assets/img/img-listing/Option 3.png" alt="image">
+                            <span>Side-stone...</span>
+                        </a>
+                        <a class="product__item product__item--listing-nav" href="">
+                            <img src="assets/img/img-listing/Option 3.png" alt="image">
+                            <span>Side-stone...</span>
+                        </a>
+                        <a class="product__item product__item--listing-nav" href="">
+                            <img src="assets/img/img-listing/Option 3.png" alt="image">
+                            <span>Side-stone...</span>
+                        </a>
+                        <a class="product__item product__item--listing-nav" href="">
+                            <img src="assets/img/img-listing/Option 3.png" alt="image">
+                            <span>Side-stone...</span>
+                        </a>
+                        <a class="product__item product__item--listing-nav" href="">
+                            <img src="assets/img/img-listing/Option 3.png" alt="image">
+                            <span>Side-stone...</span>
+                        </a>
+                        <a class="product__item product__item--listing-nav" href="">
+                            <img src="assets/img/img-listing/Option 3.png" alt="image">
+                            <span>Side-stone...</span>
+                        </a>
+                        <a class="product__item product__item--listing-nav" href="">
+                            <img src="assets/img/img-listing/Option 3.png" alt="image">
+                            <span>Side-stone...</span>
+                        </a>
+                        <a class="product__item product__item--listing-nav" href="">
+                            <img src="assets/img/img-listing/Option 4.png" alt="image">
+                            <span>Side-stone...</span>
+                        </a>
+                        <a class="product__item product__item--listing-nav" href="">
+                            <img src="assets/img/img-listing/Option 3.png" alt="image">
+                            <span>Side-stone...</span>
+                        </a>
+                        <a class="product__item product__item--listing-nav" href="">
+                            <img src="assets/img/img-listing/Option 3.png" alt="image">
+                            <span>Side-stone...</span>
+                        </a>
+                        <a class="product__item product__item--listing-nav" href="">
+                            <img src="assets/img/img-listing/Option 3.png" alt="image">
+                            <span>Side-stone...</span>
+                        </a>
+                        </a> <a class="product__item product__item--listing-nav" href="">
+                            <img src="assets/img/img-listing/Option 3.png" alt="image">
+                            <span>Side-stone...</span>
+                        </a>
+                        <a class="product__item product__item--listing-nav" href="">
+                            <img src="assets/img/img-listing/Option 3.png" alt="image">
+                            <span>Side-stone...</span>
+                        </a>
+                        <a class="product__item product__item--listing-nav" href="">
+                            <img src="assets/img/img-listing/Option 3.png" alt="image">
+                            <span>Side-stone...</span>
+                        </a>
+                        <a class="product__item product__item--listing-nav" href="">
+                            <img src="assets/img/img-listing/Option 3.png" alt="image">
+                            <span>Side-stone...</span>
+                        </a>
+                        <a class="product__item product__item--listing-nav" href="">
+                            <img src="assets/img/img-listing/Option 3.png" alt="image">
+                            <span>Side-stone...</span>
+                        </a>
+                        <a class="product__item product__item--listing-nav" href="">
+                            <img src="assets/img/img-listing/Option 3.png" alt="image">
+                            <span>Side-stone...</span>
+                        </a>
+                        <a class="product__item product__item--listing-nav" href="">
+                            <img src="assets/img/img-listing/Option 3.png" alt="image">
+                            <span>Side-stone...</span>
+                        </a>
+                        <a class="product__item product__item--listing-nav" href="">
+                            <img src="assets/img/img-listing/Option 3.png" alt="image">
+                            <span>Side-stone...</span>
+                        </a>
+                        <a class="product__item product__item--listing-nav" href="">
+                            <img src="assets/img/img-listing/Option 3.png" alt="image">
+                            <span>Side-stone...</span>
+                        </a>
+                        <a class="product__item product__item--listing-nav" href="">
+                            <img src="assets/img/img-listing/Option 3.png" alt="image">
+                            <span>Side-stone...</span>
+                        </a>
+                        <a class="product__item product__item--listing-nav" href="">
+                            <img src="assets/img/img-listing/Option 3.png" alt="image">
+                            <span>Side-stone...</span>
+                        </a>
+                        <a class="product__item product__item--listing-nav" href="">
+                            <img src="assets/img/img-listing/Option 3.png" alt="image">
+                            <span>Side-stone...</span>
+                        </a>
+                        </a> <a class="product__item product__item--listing-nav" href="">
+                            <img src="assets/img/img-listing/Option 3.png" alt="image">
+                            <span>Side-stone...</span>
+                        </a>
+                        <a class="product__item product__item--listing-nav" href="">
+                            <img src="assets/img/img-listing/Option 3.png" alt="image">
+                            <span>Side-stone...</span>
+                        </a>
+                        <a class="product__item product__item--listing-nav" href="">
+                            <img src="assets/img/img-listing/Option 3.png" alt="image">
+                            <span>Side-stone...</span>
+                        </a>
+                        <a class="product__item product__item--listing-nav" href="">
+                            <img src="assets/img/img-listing/Option 3.png" alt="image">
+                            <span>Side-stone...</span>
+                        </a>
+                        <a class="product__item product__item--listing-nav" href="">
+                            <img src="assets/img/img-listing/Option 3.png" alt="image">
+                            <span>Side-stone...</span>
+                        </a>
+                        <a class="product__item product__item--listing-nav" href="">
+                            <img src="assets/img/img-listing/Option 3.png" alt="image">
+                            <span>Side-stone...</span>
+                        </a>
+                        <a class="product__item product__item--listing-nav" href="">
+                            <img src="assets/img/img-listing/Option 3.png" alt="image">
+                            <span>Side-stone...</span>
+                        </a>
+                        <a class="product__item product__item--listing-nav" href="">
+                            <img src="assets/img/img-listing/Option 3.png" alt="image">
+                            <span>Side-stone...</span>
+                        </a>
+                        <a class="product__item product__item--listing-nav" href="">
+                            <img src="assets/img/img-listing/Option 3.png" alt="image">
+                            <span>Side-stone...</span>
+                        </a>
+                        <a class="product__item product__item--listing-nav" href="">
+                            <img src="assets/img/img-listing/Option 3.png" alt="image">
+                            <span>Side-stone...</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="position mt-16 row row-center col-center">
+                    <svg class="icon--pos icon--pos--js">
+                        <use xlink:href="sprite.svg#Rectangle 45 (1)"></use>
+                    </svg>
+                    <svg class="icon--pos icon--pos--js">
+                        <use xlink:href="sprite.svg#Rectangle 45 (1)"></use>
+                    </svg>
+                    <svg class="icon--pos icon--pos--js">
+                        <use xlink:href="sprite.svg#Rectangle 45 (1)"></use>
+                    </svg>
+                    <svg class="icon--pos icon--pos--js">
+                        <use xlink:href="sprite.svg#Rectangle 45 (1)"></use>
+                    </svg>
+                </div>
+            </nav>
+
+            <div class="listing__main grid l-2-10 m-12 c-12 mt-20-c mt-40-m mt-40">
+                <!-- phan category cua trang listing -->
+                <div class="listing__main__category">
+                    <!-- phan tim nhanh -->
+                    <div class="category__head">
+                        <div class="category__head__title">
+                            <span>Filters</span>
+                        </div>
+                        <div class="category__head__content mt-16">
+                            <div class="head__content__item row row-center">
+                                <svg class="icon--close">
+                                    <use xlink:href="sprite.svg#close-header"></use>
+                                </svg>
+                                <a class="row row-center" href="">
+                                    White diamond
+                                    <img src="assets/img/img-listing/image 58.png" alt="image">
+                                </a>
+                            </div>
+                            <div class="head__content__item mt-12 row row-center">
+                                <svg class="icon--close">
+                                    <use xlink:href="sprite.svg#close-header"></use>
+                                </svg>
+                                <a href="">0.4 — 0.6 carat</a>
+                            </div>
+                        </div>
+                        <div class="btn category__head__foot mt-16">
+                            clear all
+                        </div>
+                    </div>
+                    <!-- phan than chinh category -->
+                    <div class="category__main mt-28">
+                        <!-- phan title muc tim kiem lon -->
+                        <div class="category__main__head row row-center col-between">
+                            <span>Stone</span>
+                            <svg class="icon-minus">
+                                <use xlink:href="sprite.svg#minus"></use>
+                            </svg>
+                        </div>
+                        <!-- phan cac muc tim kiem lon -->
+                        <div class="category__main__content mt-28">
+                            <div class="content__item">
+                                <div class="item__head row row-center col-between">
+                                    <div class="item__head__title row row-center">
+                                        <svg class="icon-list">
+                                            <use xlink:href="sprite.svg#Rectangle 52"></use>
+                                        </svg>
+                                        <p>Diamond</p>
+                                    </div>
+                                    <svg class="icon--down">
+                                        <use xlink:href="sprite.svg#Vector 11"></use>
+                                    </svg>
+                                </div>
+                                <!-- phan danh sach duong link san pham theo mau sac icon -->
+                                <ul class="item__content mt-28">
+                                    <li class="item__content--link row row-center">
+                                        <div class="checkbox checkbox--now">
+                                            <svg class="icon-round">
+                                                <use xlink:href="sprite.svg#checkbox"></use>
+                                            </svg>
+                                            <svg class="icon-dot">
+                                                <use xlink:href="sprite.svg#Rectangle 45"></use>
+                                            </svg>
+                                        </div>
+                                        <a class="row row-center" href="">
+                                            White diamond
+                                            <img src="assets/img/img-listing/image 58.png" alt="image">
+                                        </a>
+                                    </li>
+                                    <li class="item__content--link row row-center mt-16">
+                                        <div class="checkbox">
+                                            <svg class="icon-round">
+                                                <use xlink:href="sprite.svg#checkbox"></use>
+                                            </svg>
+                                            <svg class="icon-dot">
+                                                <use xlink:href="sprite.svg#Rectangle 45"></use>
+                                            </svg>
+                                        </div>
+                                        <a class="row row-center" href="">
+                                            Black diamond
+                                            <img src="assets/img/img-listing/image 59.png" alt="image">
+                                        </a>
+                                    </li>
+                                    <li class="item__content--link row row-center mt-16">
+                                        <div class="checkbox">
+                                            <svg class="icon-round">
+                                                <use xlink:href="sprite.svg#checkbox"></use>
+                                            </svg>
+                                            <svg class="icon-dot">
+                                                <use xlink:href="sprite.svg#Rectangle 45"></use>
+                                            </svg>
+                                        </div>
+                                        <a class="row row-center" href="">
+                                            Yellow diamond
+                                            <img src="assets/img/img-listing/image 60.png" alt="image">
+                                        </a>
+                                    </li>
+                                    <li class="item__content--link row row-center mt-16">
+                                        <div class="checkbox">
+                                            <svg class="icon-round">
+                                                <use xlink:href="sprite.svg#checkbox"></use>
+                                            </svg>
+                                            <svg class="icon-dot">
+                                                <use xlink:href="sprite.svg#Rectangle 45"></use>
+                                            </svg>
+                                        </div>
+                                        <a class="row row-center" href="">
+                                            Blue diamond
+                                            <img src="assets/img/img-listing/image 61.png" alt="image">
+                                        </a>
+                                    </li>
+                                    <li class="item__content--link row row-center mt-16">
+                                        <div class="checkbox">
+                                            <svg class="icon-round">
+                                                <use xlink:href="sprite.svg#checkbox"></use>
+                                            </svg>
+                                            <svg class="icon-dot">
+                                                <use xlink:href="sprite.svg#Rectangle 45"></use>
+                                            </svg>
+                                        </div>
+                                        <a class="row row-center" href="">
+                                            Green diamond
+                                            <img src="assets/img/img-listing/image 62.png" alt="image">
+                                        </a>
+                                    </li>
+                                    <li class="item__content--link row row-center mt-16">
+                                        <div class="checkbox">
+                                            <svg class="icon-round">
+                                                <use xlink:href="sprite.svg#checkbox"></use>
+                                            </svg>
+                                            <svg class="icon-dot">
+                                                <use xlink:href="sprite.svg#Rectangle 45"></use>
+                                            </svg>
+                                        </div>
+                                        <a class="row row-center" href="">
+                                            Brown diamond
+                                            <img src="assets/img/img-listing/image 63.png" alt="image">
+                                        </a>
+                                    </li>
+                                    <li class="item__content--link row row-center mt-16">
+                                        <div class="checkbox">
+                                            <svg class="icon-round">
+                                                <use xlink:href="sprite.svg#checkbox"></use>
+                                            </svg>
+                                            <svg class="icon-dot">
+                                                <use xlink:href="sprite.svg#Rectangle 45"></use>
+                                            </svg>
+                                        </div>
+                                        <a class="row row-center" href="">
+                                            Lab grown diamond
+                                            <img src="assets/img/img-listing/image 64.png" alt="image">
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- phan cac muc tim kiem lon -->
+                        <div class="category__main__content mt-28">
+                            <div class="content__item">
+                                <div class="item__head row row-center col-between">
+                                    <div class="item__head__title row row-center">
+                                        <svg class="icon-list">
+                                            <use xlink:href="sprite.svg#Rectangle 52"></use>
+                                        </svg>
+                                        <p>Precious stones</p>
+                                    </div>
+                                    <svg class="icon--down">
+                                        <use xlink:href="sprite.svg#Vector 11"></use>
+                                    </svg>
+                                </div>
+                                <!-- phan danh sach duong link san pham theo mau sac icon -->
+                                <ul class="item__content mt-28">
+                                    <li class="item__content--link row row-center">
+                                        <div class="checkbox checkbox--now">
+                                            <svg class="icon-round">
+                                                <use xlink:href="sprite.svg#checkbox"></use>
+                                            </svg>
+                                            <svg class="icon-dot">
+                                                <use xlink:href="sprite.svg#Rectangle 45"></use>
+                                            </svg>
+                                        </div>
+                                        <a class="row row-center" href="">
+                                            Emerald
+                                            <img src="assets/img/img-listing/image 65.png" alt="image">
+                                        </a>
+                                    </li>
+                                    <li class="item__content--link row row-center mt-16">
+                                        <div class="checkbox">
+                                            <svg class="icon-round">
+                                                <use xlink:href="sprite.svg#checkbox"></use>
+                                            </svg>
+                                            <svg class="icon-dot">
+                                                <use xlink:href="sprite.svg#Rectangle 45"></use>
+                                            </svg>
+                                        </div>
+                                        <a class="row row-center" href="">
+                                            Ruby
+                                            <img src="assets/img/img-listing/image 66.png" alt="image">
+                                        </a>
+                                    </li>
+                                    <li class="item__content--link row row-center mt-16">
+                                        <div class="checkbox">
+                                            <svg class="icon-round">
+                                                <use xlink:href="sprite.svg#checkbox"></use>
+                                            </svg>
+                                            <svg class="icon-dot">
+                                                <use xlink:href="sprite.svg#Rectangle 45"></use>
+                                            </svg>
+                                        </div>
+                                        <a class="row row-center" href="">
+                                            Blue saphire
+                                            <img src="assets/img/img-listing/image 67.png" alt="image">
+                                        </a>
+                                    </li>
+                                    <li class="item__content--link row row-center mt-16">
+                                        <div class="checkbox">
+                                            <svg class="icon-round">
+                                                <use xlink:href="sprite.svg#checkbox"></use>
+                                            </svg>
+                                            <svg class="icon-dot">
+                                                <use xlink:href="sprite.svg#Rectangle 45"></use>
+                                            </svg>
+                                        </div>
+                                        <a class="row row-center" href="">
+                                            White saphire
+                                            <img src="assets/img/img-listing/image 68.png" alt="image">
+                                        </a>
+                                    </li>
+                                    <li class="item__content--link row row-center mt-16">
+                                        <div class="checkbox">
+                                            <svg class="icon-round">
+                                                <use xlink:href="sprite.svg#checkbox"></use>
+                                            </svg>
+                                            <svg class="icon-dot">
+                                                <use xlink:href="sprite.svg#Rectangle 45"></use>
+                                            </svg>
+                                        </div>
+                                        <a class="row row-center" href="">
+                                            Pink saphire
+                                            <img src="assets/img/img-listing/image 68.png" alt="image">
+                                        </a>
+                                    </li>
+                                    <li class="item__content--link row row-center mt-16">
+                                        <div class="checkbox">
+                                            <svg class="icon-round">
+                                                <use xlink:href="sprite.svg#checkbox"></use>
+                                            </svg>
+                                            <svg class="icon-dot">
+                                                <use xlink:href="sprite.svg#Rectangle 45"></use>
+                                            </svg>
+                                        </div>
+                                        <a class="row row-center" href="">
+                                            Yellow saphire
+                                            <img src="assets/img/img-listing/image 60.png" alt="image">
+                                        </a>
+                                    </li>
+                                    <li class="item__content--link row row-center mt-16">
+                                        <div class="checkbox">
+                                            <svg class="icon-round">
+                                                <use xlink:href="sprite.svg#checkbox"></use>
+                                            </svg>
+                                            <svg class="icon-dot">
+                                                <use xlink:href="sprite.svg#Rectangle 45"></use>
+                                            </svg>
+                                        </div>
+                                        <a class="row row-center" href="">
+                                            Black saphire
+                                            <img src="assets/img/img-listing/image 59.png" alt="image">
+                                        </a>
+                                    </li>
+                                    <li class="item__content--link row row-center mt-16">
+                                        <div class="checkbox">
+                                            <svg class="icon-round">
+                                                <use xlink:href="sprite.svg#checkbox"></use>
+                                            </svg>
+                                            <svg class="icon-dot">
+                                                <use xlink:href="sprite.svg#Rectangle 45"></use>
+                                            </svg>
+                                        </div>
+                                        <a class="row row-center" href="">
+                                            Orange saphire
+                                            <img src="assets/img/img-listing/image 71.png" alt="image">
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- phan cac muc tim kiem lon -->
+                        <div class="category__main__content mt-28">
+                            <div class="content__item">
+                                <div class="item__head row row-center col-between">
+                                    <div class="item__head__title row row-center">
+                                        <svg class="icon-list">
+                                            <use xlink:href="sprite.svg#Rectangle 52"></use>
+                                        </svg>
+                                        <p>Semi-pecious stones</p>
+                                    </div>
+                                    <svg class="icon--down rotate90">
+                                        <use xlink:href="sprite.svg#Vector 11"></use>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- phan cac muc tim kiem lon -->
+                        <div class="category__main__content mt-28">
+                            <div class="content__item">
+                                <div class="item__head row row-center col-between">
+                                    <div class="item__head__title row row-center">
+                                        <svg class="icon-list">
+                                            <use xlink:href="sprite.svg#Rectangle 52"></use>
+                                        </svg>
+                                        <p>Swarowski crystal</p>
+                                    </div>
+                                    <svg class="icon--down rotate90">
+                                        <use xlink:href="sprite.svg#Vector 11"></use>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- phan than chinh category -->
+                    <div class="category__main category__main--close mt-28">
+                        <!-- phan title muc tim kiem lon -->
+                        <div class="category__main__head row row-center col-between">
+                            <span>Carat for Central stone</span>
+                            <div class="icon--plus">
+                                <svg class="icon-minus erect rotate-90">
+                                    <use xlink:href="sprite.svg#minus"></use>
+                                </svg>
+                                <svg class="icon-minus">
+                                    <use xlink:href="sprite.svg#minus"></use>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- phan than chinh category -->
+                    <div class="category__main category__main--close">
+                        <!-- phan title muc tim kiem lon -->
+                        <div class="category__main__head row row-center col-between">
+                            <span>Stone shape</span>
+                            <div class="icon--plus">
+                                <svg class="icon-minus erect rotate-90">
+                                    <use xlink:href="sprite.svg#minus"></use>
+                                </svg>
+                                <svg class="icon-minus">
+                                    <use xlink:href="sprite.svg#minus"></use>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- phan than chinh category -->
+                    <div class="category__main category__main--close">
+                        <!-- phan title muc tim kiem lon -->
+                        <div class="category__main__head row row-center col-between">
+                            <span>Metal color</span>
+                            <div class="icon--plus">
+                                <svg class="icon-minus erect rotate-90">
+                                    <use xlink:href="sprite.svg#minus"></use>
+                                </svg>
+                                <svg class="icon-minus">
+                                    <use xlink:href="sprite.svg#minus"></use>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- phan than chinh category -->
+                    <div class="category__main category__main--close">
+                        <!-- phan title muc tim kiem lon -->
+                        <div class="category__main__head row row-center col-between">
+                            <span>Metal</span>
+                            <div class="icon--plus">
+                                <svg class="icon-minus erect rotate-90">
+                                    <use xlink:href="sprite.svg#minus"></use>
+                                </svg>
+                                <svg class="icon-minus">
+                                    <use xlink:href="sprite.svg#minus"></use>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- phan than chinh category -->
+                    <div class="category__main category__main--close">
+                        <!-- phan title muc tim kiem lon -->
+                        <div class="category__main__head row row-center col-between">
+                            <span>Accent color</span>
+                            <div class="icon--plus">
+                                <svg class="icon-minus erect rotate-90">
+                                    <use xlink:href="sprite.svg#minus"></use>
+                                </svg>
+                                <svg class="icon-minus">
+                                    <use xlink:href="sprite.svg#minus"></use>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- phan than chinh category -->
+                    <div class="category__main category__main--close category__main--dest">
+                        <!-- phan title muc tim kiem lon -->
+                        <div class="category__main__head row row-center col-between">
+                            <span>Price</span>
+                            <div class="icon--plus">
+                                <svg class="icon-minus erect rotate-90">
+                                    <use xlink:href="sprite.svg#minus"></use>
+                                </svg>
+                                <svg class="icon-minus">
+                                    <use xlink:href="sprite.svg#minus"></use>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- phan cuoi category -->
+                    <div class="category__foot">
+                        <span>Please select any filters above to setup price</span>
+                    </div>
+                </div>
+
+                <!-- phan san pham full cua trang listing -->
+                <div class="listing__main__content">
+                    <!-- phan listing lua chon cac san pham -->
+                    <div class="listing__list">
+                        <!-- phan dau gioi thieu list san pham -->
+                        <div class="listing__list__head grid c-12 m-12 l-8-4">
+                            <div class="head__title row row-center">
+                                <p>3406 Customisable Products Found</p>
+                                <div class="icon-question">
+                                    <svg class="icon">
+                                        <use xlink:href="sprite.svg#_"></use>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="head__nav mt-10-c mt-20-m grid c-6 m-6 l-6">
+                                <!-- phan head nav dang lua chon -->
+                                <nav class="head__nav--op row row-center">
+                                    <p>View</p>
+                                    <div class="icon-specical">
+                                        <svg class="icon--s">
+                                            <use xlink:href="sprite.svg#Vector 5"></use>
+                                        </svg>
+                                        <svg class="icon--l">
+                                            <use xlink:href="sprite.svg#Ellipse 11"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="icon-specical rotate-90 ">
+                                        <svg class="icon--s">
+                                            <use xlink:href="sprite.svg#Vector 5"></use>
+                                        </svg>
+                                        <svg class="icon--l">
+                                            <use xlink:href="sprite.svg#Ellipse 11"></use>
+                                        </svg>
+                                    </div>
+                                </nav>
+                                <!-- phan head nav dang danh sach -->
+                                <nav class="head__nav--list row row-center">
+                                    <span>Sort by</span>
+                                    <a class="head__nav--list--link row row-center" href="">
+                                        Featured
+                                        <svg class="icon">
+                                            <use xlink:href="sprite.svg#Vector 11"></use>
+                                        </svg>
+                                    </a>
+                                </nav>
+                            </div>
+                        </div>
+                        <!-- phan san pham list -->
+                        <div class="listing__list__product main--best">
+                            <div class="main--best--product grid gap-15 l-4 e-3 f-24 m-4 c-6">
+                                <a class="product--item product--item1" href="">
+                                    <div class="product--item__img">
+                                        <img src="/assets/img/img-listing/image 72l.png" alt="">
+                                        <svg class="icon icon--heart">
+                                            <use xlink:href="sprite.svg#bordr"></use>
+                                        </svg>
+                                        <svg class="icon icon--diamon">
+                                            <use xlink:href="sprite.svg#Vector 7"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="product--item__inf">
+                                        <p>GLAMIRA Bridal Set Crinkly</p>
+                                        <div class="item__inf__extend">
+                                            <p>950 Platinum Diamond  & Swarovski ...</p>
+                                            <div class="extend--with-icon row row-center">
+                                                <p>3.53 crt- VS</p>
+                                                <div class="icon-question">
+                                                    <svg class="icon">
+                                                        <use xlink:href="sprite.svg#_"></use>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <p class="price">$1 394</p>
+                                    </div>
+                                </a>
+
+                                <a class="product--item product--item1" href="">
+                                    <div class="product--item__img">
+                                        <img src="/assets/img/img-listing/option 5l.png" alt="">
+                                        <svg class="icon icon--heart">
+                                            <use xlink:href="sprite.svg#bordr"></use>
+                                        </svg>
+                                        <svg class="icon icon--diamon">
+                                            <use xlink:href="sprite.svg#Vector 7"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="product--item__inf">
+                                        <p>GLAMIRA Bridal Set Crinkly</p>
+                                        <div class="item__inf__extend">
+                                            <p>950 Platinum Diamond  & Swarovski ...</p>
+                                            <div class="extend--with-icon row row-center">
+                                                <p>3.53 crt- VS</p>
+                                                <div class="icon-question">
+                                                    <svg class="icon">
+                                                        <use xlink:href="sprite.svg#_"></use>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <p class="price">$1 394</p>
+                                    </div>
+                                </a>
+
+                                <a class="product--item product--item1" href="">
+                                    <div class="product--item__img">
+                                        <img src="/assets/img/img-listing/option 1l.png" alt="">
+                                        <svg class="icon icon--heart">
+                                            <use xlink:href="sprite.svg#bordr"></use>
+                                        </svg>
+                                        <svg class="icon icon--diamon">
+                                            <use xlink:href="sprite.svg#Vector 7"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="product--item__inf">
+                                        <p>GLAMIRA Bridal Set Crinkly</p>
+                                        <div class="item__inf__extend">
+                                            <p>950 Platinum Diamond  & Swarovski ...</p>
+                                            <div class="extend--with-icon row row-center">
+                                                <p>3.53 crt- VS</p>
+                                                <div class="icon-question">
+                                                    <svg class="icon">
+                                                        <use xlink:href="sprite.svg#_"></use>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <p class="price">$1 394</p>
+                                    </div>
+                                </a>
+
+                                <a class="product--item product--item1" href="">
+                                    <div class="product--item__img">
+                                        <img src="/assets/img/img-listing/option 4l.png" alt="">
+                                        <svg class="icon icon--heart">
+                                            <use xlink:href="sprite.svg#bordr"></use>
+                                        </svg>
+                                        <svg class="icon icon--diamon">
+                                            <use xlink:href="sprite.svg#Vector 7"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="product--item__inf">
+                                        <p>GLAMIRA Bridal Set Crinkly</p>
+                                        <div class="item__inf__extend">
+                                            <p>950 Platinum Diamond  & Swarovski ...</p>
+                                            <div class="extend--with-icon row row-center">
+                                                <p>3.53 crt- VS</p>
+                                                <div class="icon-question">
+                                                    <svg class="icon">
+                                                        <use xlink:href="sprite.svg#_"></use>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <p class="price">$1 394</p>
+                                    </div>
+                                </a>
+
+                                <a class="product--item product--item1" href="">
+                                    <div class="product--item__img">
+                                        <img src="/assets/img/img-listing/option 1l.png" alt="">
+                                        <svg class="icon icon--heart">
+                                            <use xlink:href="sprite.svg#bordr"></use>
+                                        </svg>
+                                        <svg class="icon icon--diamon">
+                                            <use xlink:href="sprite.svg#Vector 7"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="product--item__inf">
+                                        <p>GLAMIRA Bridal Set Crinkly</p>
+                                        <div class="item__inf__extend">
+                                            <p>950 Platinum Diamond  & Swarovski ...</p>
+                                            <div class="extend--with-icon row row-center">
+                                                <p>3.53 crt- VS</p>
+                                                <div class="icon-question">
+                                                    <svg class="icon">
+                                                        <use xlink:href="sprite.svg#_"></use>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <p class="price">$1 394</p>
+                                    </div>
+                                </a>
+
+                                <a class="product--item product--item1" href="">
+                                    <div class="product--item__img">
+                                        <img src="/assets/img/img-listing/option 5l.png" alt="">
+                                        <svg class="icon icon--heart">
+                                            <use xlink:href="sprite.svg#bordr"></use>
+                                        </svg>
+                                        <svg class="icon icon--diamon">
+                                            <use xlink:href="sprite.svg#Vector 7"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="product--item__inf">
+                                        <p>GLAMIRA Bridal Set Crinkly</p>
+                                        <div class="item__inf__extend">
+                                            <p>950 Platinum Diamond  & Swarovski ...</p>
+                                            <div class="extend--with-icon row row-center">
+                                                <p>3.53 crt- VS</p>
+                                                <div class="icon-question">
+                                                    <svg class="icon">
+                                                        <use xlink:href="sprite.svg#_"></use>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <p class="price">$1 394</p>
+                                    </div>
+                                </a>
+
+                                <!-- product with img--mobile -->
+                                <a href="" class="product--item produc--item__img img--mobile">
+                                    <img src="assets/img/img-listing/image 56.png" alt="image">
+                                    <h4>GLAMIRA Bridal Set Crinkly Ring (For Her)</h4>
+                                </a>
+
+                                <a class="product--item product--item1" href="">
+                                    <div class="product--item__img">
+                                        <img src="/assets/img/img-listing/option 3l.png" alt="">
+                                        <svg class="icon icon--heart">
+                                            <use xlink:href="sprite.svg#bordr"></use>
+                                        </svg>
+                                        <svg class="icon icon--diamon">
+                                            <use xlink:href="sprite.svg#Vector 7"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="product--item__inf">
+                                        <p>GLAMIRA Bridal Set Crinkly</p>
+                                        <div class="item__inf__extend">
+                                            <p>950 Platinum Diamond  & Swarovski ...</p>
+                                            <div class="extend--with-icon row row-center">
+                                                <p>3.53 crt- VS</p>
+                                                <div class="icon-question">
+                                                    <svg class="icon">
+                                                        <use xlink:href="sprite.svg#_"></use>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <p class="price">$1 394</p>
+                                    </div>
+                                </a>
+
+                                <a class="product--item product--item1" href="">
+                                    <div class="product--item__img">
+                                        <img src="/assets/img/img-listing/image 43l.png" alt="">
+                                        <svg class="icon icon--heart">
+                                            <use xlink:href="sprite.svg#bordr"></use>
+                                        </svg>
+                                        <svg class="icon icon--diamon">
+                                            <use xlink:href="sprite.svg#Vector 7"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="product--item__inf">
+                                        <p>GLAMIRA Bridal Set Crinkly</p>
+                                        <div class="item__inf__extend">
+                                            <p>950 Platinum Diamond  & Swarovski ...</p>
+                                            <div class="extend--with-icon row row-center">
+                                                <p>3.53 crt- VS</p>
+                                                <div class="icon-question">
+                                                    <svg class="icon">
+                                                        <use xlink:href="sprite.svg#_"></use>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <p class="price">$1 394</p>
+                                    </div>
+                                </a>
+
+                                <a class="product--item product--item1" href="">
+                                    <div class="product--item__img">
+                                        <img src="/assets/img/img-listing/image 72l.png" alt="">
+                                        <svg class="icon icon--heart">
+                                            <use xlink:href="sprite.svg#bordr"></use>
+                                        </svg>
+                                        <svg class="icon icon--diamon">
+                                            <use xlink:href="sprite.svg#Vector 7"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="product--item__inf">
+                                        <p>GLAMIRA Bridal Set Crinkly</p>
+                                        <div class="item__inf__extend">
+                                            <p>950 Platinum Diamond  & Swarovski ...</p>
+                                            <div class="extend--with-icon row row-center">
+                                                <p>3.53 crt- VS</p>
+                                                <div class="icon-question">
+                                                    <svg class="icon">
+                                                        <use xlink:href="sprite.svg#_"></use>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <p class="price">$1 394</p>
+                                    </div>
+                                </a>
+
+                                <a class="product--item product--item1" href="">
+                                    <div class="product--item__img">
+                                        <img src="/assets/img/img-listing/option 5l.png" alt="">
+                                        <svg class="icon icon--heart">
+                                            <use xlink:href="sprite.svg#bordr"></use>
+                                        </svg>
+                                        <svg class="icon icon--diamon">
+                                            <use xlink:href="sprite.svg#Vector 7"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="product--item__inf">
+                                        <p>GLAMIRA Bridal Set Crinkly</p>
+                                        <div class="item__inf__extend">
+                                            <p>950 Platinum Diamond  & Swarovski ...</p>
+                                            <div class="extend--with-icon row row-center">
+                                                <p>3.53 crt- VS</p>
+                                                <div class="icon-question">
+                                                    <svg class="icon">
+                                                        <use xlink:href="sprite.svg#_"></use>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <p class="price">$1 394</p>
+                                    </div>
+                                </a>
+
+                                <a class="product--item product--item1" href="">
+                                    <div class="product--item__img">
+                                        <img src="/assets/img/img-listing/option 1l.png" alt="">
+                                        <svg class="icon icon--heart">
+                                            <use xlink:href="sprite.svg#bordr"></use>
+                                        </svg>
+                                        <svg class="icon icon--diamon">
+                                            <use xlink:href="sprite.svg#Vector 7"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="product--item__inf">
+                                        <p>GLAMIRA Bridal Set Crinkly</p>
+                                        <div class="item__inf__extend">
+                                            <p>950 Platinum Diamond  & Swarovski ...</p>
+                                            <div class="extend--with-icon row row-center">
+                                                <p>3.53 crt- VS</p>
+                                                <div class="icon-question">
+                                                    <svg class="icon">
+                                                        <use xlink:href="sprite.svg#_"></use>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <p class="price">$1 394</p>
+                                    </div>
+                                </a>
+
+                                <!-- product with img--pc -->
+                                <a href="" class="product--item produc--item__img img--pc">
+                                    <img src="assets/img/img-listing/image 56.png" alt="image">
+                                    <h4>GLAMIRA Bridal Set Crinkly Ring (For Her)</h4>
+                                </a>
+
+                                <a class="product--item product--item1" href="">
+                                    <div class="product--item__img">
+                                        <img src="/assets/img/img-listing/option 4l.png" alt="">
+                                        <svg class="icon icon--heart">
+                                            <use xlink:href="sprite.svg#bordr"></use>
+                                        </svg>
+                                        <svg class="icon icon--diamon">
+                                            <use xlink:href="sprite.svg#Vector 7"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="product--item__inf">
+                                        <p>GLAMIRA Bridal Set Crinkly</p>
+                                        <div class="item__inf__extend">
+                                            <p>950 Platinum Diamond  & Swarovski ...</p>
+                                            <div class="extend--with-icon row row-center">
+                                                <p>3.53 crt- VS</p>
+                                                <div class="icon-question">
+                                                    <svg class="icon">
+                                                        <use xlink:href="sprite.svg#_"></use>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <p class="price">$1 394</p>
+                                    </div>
+                                </a>
+
+                                <a class="product--item product--item1" href="">
+                                    <div class="product--item__img">
+                                        <img src="/assets/img/img-listing/option 1l.png" alt="">
+                                        <svg class="icon icon--heart">
+                                            <use xlink:href="sprite.svg#bordr"></use>
+                                        </svg>
+                                        <svg class="icon icon--diamon">
+                                            <use xlink:href="sprite.svg#Vector 7"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="product--item__inf">
+                                        <p>GLAMIRA Bridal Set Crinkly</p>
+                                        <div class="item__inf__extend">
+                                            <p>950 Platinum Diamond  & Swarovski ...</p>
+                                            <div class="extend--with-icon row row-center">
+                                                <p>3.53 crt- VS</p>
+                                                <div class="icon-question">
+                                                    <svg class="icon">
+                                                        <use xlink:href="sprite.svg#_"></use>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <p class="price">$1 394</p>
+                                    </div>
+                                </a>
+
+                                <a class="product--item product--item1" href="">
+                                    <div class="product--item__img">
+                                        <img src="/assets/img/img-listing/option 5l.png" alt="">
+                                        <svg class="icon icon--heart">
+                                            <use xlink:href="sprite.svg#bordr"></use>
+                                        </svg>
+                                        <svg class="icon icon--diamon">
+                                            <use xlink:href="sprite.svg#Vector 7"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="product--item__inf">
+                                        <p>GLAMIRA Bridal Set Crinkly</p>
+                                        <div class="item__inf__extend">
+                                            <p>950 Platinum Diamond  & Swarovski ...</p>
+                                            <div class="extend--with-icon row row-center">
+                                                <p>3.53 crt- VS</p>
+                                                <div class="icon-question">
+                                                    <svg class="icon">
+                                                        <use xlink:href="sprite.svg#_"></use>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <p class="price">$1 394</p>
+                                    </div>
+                                </a>
+
+                                <a class="product--item product--item1" href="">
+                                    <div class="product--item__img">
+                                        <img src="/assets/img/img-listing/option 5l.png" alt="">
+                                        <svg class="icon icon--heart">
+                                            <use xlink:href="sprite.svg#bordr"></use>
+                                        </svg>
+                                        <svg class="icon icon--diamon">
+                                            <use xlink:href="sprite.svg#Vector 7"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="product--item__inf">
+                                        <p>GLAMIRA Bridal Set Crinkly</p>
+                                        <div class="item__inf__extend">
+                                            <p>950 Platinum Diamond  & Swarovski ...</p>
+                                            <div class="extend--with-icon row row-center">
+                                                <p>3.53 crt- VS</p>
+                                                <div class="icon-question">
+                                                    <svg class="icon">
+                                                        <use xlink:href="sprite.svg#_"></use>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <p class="price">$1 394</p>
+                                    </div>
+                                </a>
+
+                                <!-- product with img tablet-->
+                                <a href="" class="product--item produc--item__img img--tablet">
+                                    <img src="assets/img/img-listing/Screenshot 2022-08-15 at 19.36 1 (copy).png"
+                                        alt="image">
+                                </a>
+
+                                <a class="product--item product--item1" href="">
+                                    <div class="product--item__img">
+                                        <img src="/assets/img/img-listing/option 3l.png" alt="">
+                                        <svg class="icon icon--heart">
+                                            <use xlink:href="sprite.svg#bordr"></use>
+                                        </svg>
+                                        <svg class="icon icon--diamon">
+                                            <use xlink:href="sprite.svg#Vector 7"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="product--item__inf">
+                                        <p>GLAMIRA Bridal Set Crinkly</p>
+                                        <div class="item__inf__extend">
+                                            <p>950 Platinum Diamond  & Swarovski ...</p>
+                                            <div class="extend--with-icon row row-center">
+                                                <p>3.53 crt- VS</p>
+                                                <div class="icon-question">
+                                                    <svg class="icon">
+                                                        <use xlink:href="sprite.svg#_"></use>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <p class="price">$1 394</p>
+                                    </div>
+                                </a>
+
+                                <!-- product with img mobile-->
+                                <a href="" class="product--item produc--item__img img--mobile img--tablet--hidden">
+                                    <img src="assets/img/img-listing/Screenshot 2022-08-15 at 19.36 1 (copy).png"
+                                        alt="image">
+                                </a>
+
+                                <a class="product--item product--item1" href="">
+                                    <div class="product--item__img">
+                                        <img src="/assets/img/img-listing/image 72l.png" alt="">
+                                        <svg class="icon icon--heart">
+                                            <use xlink:href="sprite.svg#bordr"></use>
+                                        </svg>
+                                        <svg class="icon icon--diamon">
+                                            <use xlink:href="sprite.svg#Vector 7"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="product--item__inf">
+                                        <p>GLAMIRA Bridal Set Crinkly</p>
+                                        <div class="item__inf__extend">
+                                            <p>950 Platinum Diamond  & Swarovski ...</p>
+                                            <div class="extend--with-icon row row-center">
+                                                <p>3.53 crt- VS</p>
+                                                <div class="icon-question">
+                                                    <svg class="icon">
+                                                        <use xlink:href="sprite.svg#_"></use>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <p class="price">$1 394</p>
+                                    </div>
+                                </a>
+
+                                <a class="product--item product--item1" href="">
+                                    <div class="product--item__img">
+                                        <img src="/assets/img/img-listing/option 5l.png" alt="">
+                                        <svg class="icon icon--heart">
+                                            <use xlink:href="sprite.svg#bordr"></use>
+                                        </svg>
+                                        <svg class="icon icon--diamon">
+                                            <use xlink:href="sprite.svg#Vector 7"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="product--item__inf">
+                                        <p>GLAMIRA Bridal Set Crinkly</p>
+                                        <div class="item__inf__extend">
+                                            <p>950 Platinum Diamond  & Swarovski ...</p>
+                                            <div class="extend--with-icon row row-center">
+                                                <p>3.53 crt- VS</p>
+                                                <div class="icon-question">
+                                                    <svg class="icon">
+                                                        <use xlink:href="sprite.svg#_"></use>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <p class="price">$1 394</p>
+                                    </div>
+                                </a>
+
+                                <a class="product--item product--item1" href="">
+                                    <div class="product--item__img">
+                                        <img src="/assets/img/img-listing/option 1l.png" alt="">
+                                        <svg class="icon icon--heart">
+                                            <use xlink:href="sprite.svg#bordr"></use>
+                                        </svg>
+                                        <svg class="icon icon--diamon">
+                                            <use xlink:href="sprite.svg#Vector 7"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="product--item__inf">
+                                        <p>GLAMIRA Bridal Set Crinkly</p>
+                                        <div class="item__inf__extend">
+                                            <p>950 Platinum Diamond  & Swarovski ...</p>
+                                            <div class="extend--with-icon row row-center">
+                                                <p>3.53 crt- VS</p>
+                                                <div class="icon-question">
+                                                    <svg class="icon">
+                                                        <use xlink:href="sprite.svg#_"></use>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <p class="price">$1 394</p>
+                                    </div>
+                                </a>
+
+                                <a class="product--item product--item1" href="">
+                                    <div class="product--item__img">
+                                        <img src="/assets/img/img-listing/option 4l.png" alt="">
+                                        <svg class="icon icon--heart">
+                                            <use xlink:href="sprite.svg#bordr"></use>
+                                        </svg>
+                                        <svg class="icon icon--diamon">
+                                            <use xlink:href="sprite.svg#Vector 7"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="product--item__inf">
+                                        <p>GLAMIRA Bridal Set Crinkly</p>
+                                        <div class="item__inf__extend">
+                                            <p>950 Platinum Diamond  & Swarovski ...</p>
+                                            <div class="extend--with-icon row row-center">
+                                                <p>3.53 crt- VS</p>
+                                                <div class="icon-question">
+                                                    <svg class="icon">
+                                                        <use xlink:href="sprite.svg#_"></use>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <p class="price">$1 394</p>
+                                    </div>
+                                </a>
+
+                                <a class="product--item product--item1" href="">
+                                    <div class="product--item__img">
+                                        <img src="/assets/img/img-listing/option 1l.png" alt="">
+                                        <svg class="icon icon--heart">
+                                            <use xlink:href="sprite.svg#bordr"></use>
+                                        </svg>
+                                        <svg class="icon icon--diamon">
+                                            <use xlink:href="sprite.svg#Vector 7"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="product--item__inf">
+                                        <p>GLAMIRA Bridal Set Crinkly</p>
+                                        <div class="item__inf__extend">
+                                            <p>950 Platinum Diamond  & Swarovski ...</p>
+                                            <div class="extend--with-icon row row-center">
+                                                <p>3.53 crt- VS</p>
+                                                <div class="icon-question">
+                                                    <svg class="icon">
+                                                        <use xlink:href="sprite.svg#_"></use>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <p class="price">$1 394</p>
+                                    </div>
+                                </a>
+
+                                <a class="product--item product--item1" href="">
+                                    <div class="product--item__img">
+                                        <img src="/assets/img/img-listing/option 5l.png" alt="">
+                                        <svg class="icon icon--heart">
+                                            <use xlink:href="sprite.svg#bordr"></use>
+                                        </svg>
+                                        <svg class="icon icon--diamon">
+                                            <use xlink:href="sprite.svg#Vector 7"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="product--item__inf">
+                                        <p>GLAMIRA Bridal Set Crinkly</p>
+                                        <div class="item__inf__extend">
+                                            <p>950 Platinum Diamond  & Swarovski ...</p>
+                                            <div class="extend--with-icon row row-center">
+                                                <p>3.53 crt- VS</p>
+                                                <div class="icon-question">
+                                                    <svg class="icon">
+                                                        <use xlink:href="sprite.svg#_"></use>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <p class="price">$1 394</p>
+                                    </div>
+                                </a>
+
+                                <a class="product--item product--item1" href="">
+                                    <div class="product--item__img">
+                                        <img src="/assets/img/img-listing/image 72l.png" alt="">
+                                        <svg class="icon icon--heart">
+                                            <use xlink:href="sprite.svg#bordr"></use>
+                                        </svg>
+                                        <svg class="icon icon--diamon">
+                                            <use xlink:href="sprite.svg#Vector 7"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="product--item__inf">
+                                        <p>GLAMIRA Bridal Set Crinkly</p>
+                                        <div class="item__inf__extend">
+                                            <p>950 Platinum Diamond  & Swarovski ...</p>
+                                            <div class="extend--with-icon row row-center">
+                                                <p>3.53 crt- VS</p>
+                                                <div class="icon-question">
+                                                    <svg class="icon">
+                                                        <use xlink:href="sprite.svg#_"></use>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <p class="price">$1 394</p>
+                                    </div>
+                                </a>
+
+                                <a class="product--item product--item1" href="">
+                                    <div class="product--item__img">
+                                        <img src="/assets/img/img-listing/option 5l.png" alt="">
+                                        <svg class="icon icon--heart">
+                                            <use xlink:href="sprite.svg#bordr"></use>
+                                        </svg>
+                                        <svg class="icon icon--diamon">
+                                            <use xlink:href="sprite.svg#Vector 7"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="product--item__inf">
+                                        <p>GLAMIRA Bridal Set Crinkly</p>
+                                        <div class="item__inf__extend">
+                                            <p>950 Platinum Diamond  & Swarovski ...</p>
+                                            <div class="extend--with-icon row row-center">
+                                                <p>3.53 crt- VS</p>
+                                                <div class="icon-question">
+                                                    <svg class="icon">
+                                                        <use xlink:href="sprite.svg#_"></use>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <p class="price">$1 394</p>
+                                    </div>
+                                </a>
+
+                                <a class="product--item product--item1" href="">
+                                    <div class="product--item__img">
+                                        <img src="/assets/img/img-listing/option 1l.png" alt="">
+                                        <svg class="icon icon--heart">
+                                            <use xlink:href="sprite.svg#bordr"></use>
+                                        </svg>
+                                        <svg class="icon icon--diamon">
+                                            <use xlink:href="sprite.svg#Vector 7"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="product--item__inf">
+                                        <p>GLAMIRA Bridal Set Crinkly</p>
+                                        <div class="item__inf__extend">
+                                            <p>950 Platinum Diamond  & Swarovski ...</p>
+                                            <div class="extend--with-icon row row-center">
+                                                <p>3.53 crt- VS</p>
+                                                <div class="icon-question">
+                                                    <svg class="icon">
+                                                        <use xlink:href="sprite.svg#_"></use>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <p class="price">$1 394</p>
+                                    </div>
+                                </a>
+
+                                <a class="product--item product--item1" href="">
+                                    <div class="product--item__img">
+                                        <img src="/assets/img/img-listing/option 4l.png" alt="">
+                                        <svg class="icon icon--heart">
+                                            <use xlink:href="sprite.svg#bordr"></use>
+                                        </svg>
+                                        <svg class="icon icon--diamon">
+                                            <use xlink:href="sprite.svg#Vector 7"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="product--item__inf">
+                                        <p>GLAMIRA Bridal Set Crinkly</p>
+                                        <div class="item__inf__extend">
+                                            <p>950 Platinum Diamond  & Swarovski ...</p>
+                                            <div class="extend--with-icon row row-center">
+                                                <p>3.53 crt- VS</p>
+                                                <div class="icon-question">
+                                                    <svg class="icon">
+                                                        <use xlink:href="sprite.svg#_"></use>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <p class="price">$1 394</p>
+                                    </div>
+                                </a>
+
+                                <a class="product--item product--item1" href="">
+                                    <div class="product--item__img">
+                                        <img src="/assets/img/img-listing/option 1l.png" alt="">
+                                        <svg class="icon icon--heart">
+                                            <use xlink:href="sprite.svg#bordr"></use>
+                                        </svg>
+                                        <svg class="icon icon--diamon">
+                                            <use xlink:href="sprite.svg#Vector 7"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="product--item__inf">
+                                        <p>GLAMIRA Bridal Set Crinkly</p>
+                                        <div class="item__inf__extend">
+                                            <p>950 Platinum Diamond  & Swarovski ...</p>
+                                            <div class="extend--with-icon row row-center">
+                                                <p>3.53 crt- VS</p>
+                                                <div class="icon-question">
+                                                    <svg class="icon">
+                                                        <use xlink:href="sprite.svg#_"></use>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <p class="price">$1 394</p>
+                                    </div>
+                                </a>
+
+                                <a class="product--item product--item1" href="">
+                                    <div class="product--item__img">
+                                        <img src="/assets/img/img-listing/option 5l.png" alt="">
+                                        <svg class="icon icon--heart">
+                                            <use xlink:href="sprite.svg#bordr"></use>
+                                        </svg>
+                                        <svg class="icon icon--diamon">
+                                            <use xlink:href="sprite.svg#Vector 7"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="product--item__inf">
+                                        <p>GLAMIRA Bridal Set Crinkly</p>
+                                        <div class="item__inf__extend">
+                                            <p>950 Platinum Diamond  & Swarovski ...</p>
+                                            <div class="extend--with-icon row row-center">
+                                                <p>3.53 crt- VS</p>
+                                                <div class="icon-question">
+                                                    <svg class="icon">
+                                                        <use xlink:href="sprite.svg#_"></use>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <p class="price">$1 394</p>
+                                    </div>
+                                </a>
+
+                                <a class="product--item product--item1" href="">
+                                    <div class="product--item__img">
+                                        <img src="/assets/img/img-listing/image 72l.png" alt="">
+                                        <svg class="icon icon--heart">
+                                            <use xlink:href="sprite.svg#bordr"></use>
+                                        </svg>
+                                        <svg class="icon icon--diamon">
+                                            <use xlink:href="sprite.svg#Vector 7"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="product--item__inf">
+                                        <p>GLAMIRA Bridal Set Crinkly</p>
+                                        <div class="item__inf__extend">
+                                            <p>950 Platinum Diamond  & Swarovski ...</p>
+                                            <div class="extend--with-icon row row-center">
+                                                <p>3.53 crt- VS</p>
+                                                <div class="icon-question">
+                                                    <svg class="icon">
+                                                        <use xlink:href="sprite.svg#_"></use>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <p class="price">$1 394</p>
+                                    </div>
+                                </a>
+
+                                <a class="product--item product--item1" href="">
+                                    <div class="product--item__img">
+                                        <img src="/assets/img/img-listing/option 5l.png" alt="">
+                                        <svg class="icon icon--heart">
+                                            <use xlink:href="sprite.svg#bordr"></use>
+                                        </svg>
+                                        <svg class="icon icon--diamon">
+                                            <use xlink:href="sprite.svg#Vector 7"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="product--item__inf">
+                                        <p>GLAMIRA Bridal Set Crinkly</p>
+                                        <div class="item__inf__extend">
+                                            <p>950 Platinum Diamond  & Swarovski ...</p>
+                                            <div class="extend--with-icon row row-center">
+                                                <p>3.53 crt- VS</p>
+                                                <div class="icon-question">
+                                                    <svg class="icon">
+                                                        <use xlink:href="sprite.svg#_"></use>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <p class="price">$1 394</p>
+                                    </div>
+                                </a>
+
+                                <a class="product--item product--item1" href="">
+                                    <div class="product--item__img">
+                                        <img src="/assets/img/img-listing/option 1l.png" alt="">
+                                        <svg class="icon icon--heart">
+                                            <use xlink:href="sprite.svg#bordr"></use>
+                                        </svg>
+                                        <svg class="icon icon--diamon">
+                                            <use xlink:href="sprite.svg#Vector 7"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="product--item__inf">
+                                        <p>GLAMIRA Bridal Set Crinkly</p>
+                                        <div class="item__inf__extend">
+                                            <p>950 Platinum Diamond  & Swarovski ...</p>
+                                            <div class="extend--with-icon row row-center">
+                                                <p>3.53 crt- VS</p>
+                                                <div class="icon-question">
+                                                    <svg class="icon">
+                                                        <use xlink:href="sprite.svg#_"></use>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <p class="price">$1 394</p>
+                                    </div>
+                                </a>
+
+                                <a href="" class="product--item produc--item__img img--pc-full">
+                                    <img src="assets/img/img-listing/imgpc.png" alt="image">
+                                </a>
+
+                                <a class="product--item product--item1" href="">
+                                    <div class="product--item__img">
+                                        <img src="/assets/img/img-listing/option 4l.png" alt="">
+                                        <svg class="icon icon--heart">
+                                            <use xlink:href="sprite.svg#bordr"></use>
+                                        </svg>
+                                        <svg class="icon icon--diamon">
+                                            <use xlink:href="sprite.svg#Vector 7"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="product--item__inf">
+                                        <p>GLAMIRA Bridal Set Crinkly</p>
+                                        <div class="item__inf__extend">
+                                            <p>950 Platinum Diamond  & Swarovski ...</p>
+                                            <div class="extend--with-icon row row-center">
+                                                <p>3.53 crt- VS</p>
+                                                <div class="icon-question">
+                                                    <svg class="icon">
+                                                        <use xlink:href="sprite.svg#_"></use>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <p class="price">$1 394</p>
+                                    </div>
+                                </a>
+
+                                <a class="product--item product--item1" href="">
+                                    <div class="product--item__img">
+                                        <img src="/assets/img/img-listing/option 1l.png" alt="">
+                                        <svg class="icon icon--heart">
+                                            <use xlink:href="sprite.svg#bordr"></use>
+                                        </svg>
+                                        <svg class="icon icon--diamon">
+                                            <use xlink:href="sprite.svg#Vector 7"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="product--item__inf">
+                                        <p>GLAMIRA Bridal Set Crinkly</p>
+                                        <div class="item__inf__extend">
+                                            <p>950 Platinum Diamond  & Swarovski ...</p>
+                                            <div class="extend--with-icon row row-center">
+                                                <p>3.53 crt- VS</p>
+                                                <div class="icon-question">
+                                                    <svg class="icon">
+                                                        <use xlink:href="sprite.svg#_"></use>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <p class="price">$1 394</p>
+                                    </div>
+                                </a>
+
+                                <a class="product--item product--item1" href="">
+                                    <div class="product--item__img">
+                                        <img src="/assets/img/img-listing/option 5l.png" alt="">
+                                        <svg class="icon icon--heart">
+                                            <use xlink:href="sprite.svg#bordr"></use>
+                                        </svg>
+                                        <svg class="icon icon--diamon">
+                                            <use xlink:href="sprite.svg#Vector 7"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="product--item__inf">
+                                        <p>GLAMIRA Bridal Set Crinkly</p>
+                                        <div class="item__inf__extend">
+                                            <p>950 Platinum Diamond  & Swarovski ...</p>
+                                            <div class="extend--with-icon row row-center">
+                                                <p>3.53 crt- VS</p>
+                                                <div class="icon-question">
+                                                    <svg class="icon">
+                                                        <use xlink:href="sprite.svg#_"></use>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <p class="price">$1 394</p>
+                                    </div>
+                                </a>
+
+                                <a class="product--item product--item1" href="">
+                                    <div class="product--item__img">
+                                        <img src="/assets/img/img-listing/image 72l.png" alt="">
+                                        <svg class="icon icon--heart">
+                                            <use xlink:href="sprite.svg#bordr"></use>
+                                        </svg>
+                                        <svg class="icon icon--diamon">
+                                            <use xlink:href="sprite.svg#Vector 7"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="product--item__inf">
+                                        <p>GLAMIRA Bridal Set Crinkly</p>
+                                        <div class="item__inf__extend">
+                                            <p>950 Platinum Diamond  & Swarovski ...</p>
+                                            <div class="extend--with-icon row row-center">
+                                                <p>3.53 crt- VS</p>
+                                                <div class="icon-question">
+                                                    <svg class="icon">
+                                                        <use xlink:href="sprite.svg#_"></use>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <p class="price">$1 394</p>
+                                    </div>
+                                </a>
+
+                            </div>
+                            <!-- phan nav cuoi cung -->
+                            <div class="listing__nav--last mt-20-c mt-40-m mt-60">
+                                <span>
+                                    <p>You’ve viewed 72 of 222 reviews</p>
+                                </span>
+                                <nav class="row row-center col-around">
+                                    <p>Upload more (30)</p>
+                                    <svg class="icon">
+                                        <use xlink:href="sprite.svg#Vector 11"></use>
+                                    </svg>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- phan recently -->
+            <div class="listing__list--small mt-20-c mt-40-m mt-140">
+                <h2>Recently viewed</h2>
+                <!-- phan list product trong nav -->
+                <div class="listing__nav__product mt-20-c mt-20-m mt-40 row">
+                    <a class="product__item" href="">
+                        <img src="assets/img/img-listing/option 6.png" alt="image">
+                    </a>
+                    <a class="product__item" href="">
+                        <img src="assets/img/img-listing/option 5.png" alt="image">
+                    </a>
+                    <a class="product__item" href="">
+                        <img src="assets/img/img-listing/option 7.png" alt="image">
+                    </a>
+                    <a class="product__item" href="">
+                        <img src="assets/img/img-listing/option 5.png" alt="image">
+                    </a>
+                    <a class="product__item" href="">
+                        <img src="assets/img/img-listing/option 6.png" alt="image">
+                    </a>
+                    <a class="product__item" href="">
+                        <img src="assets/img/img-listing/option 5.png" alt="image">
+                    </a>
+                    <a class="product__item" href="">
+                        <img src="assets/img/img-listing/option 7.png" alt="image">
+                    </a>
+                    <a class="product__item" href="">
+                        <img src="assets/img/img-listing/option 5.png" alt="image">
+                    </a>
+                    <a class="product__item" href="">
+                        <img src="assets/img/img-listing/option 6.png" alt="image">
+                    </a>
+                    <a class="product__item" href="">
+                        <img src="assets/img/img-listing/option 5.png" alt="image">
+                    </a>
+                    <a class="product__item" href="">
+                        <img src="assets/img/img-listing/option 7.png" alt="image">
+                    </a>
+                    <a class="product__item" href="">
+                        <img src="assets/img/img-listing/option 5.png" alt="image">
+                    </a>
+                    <a class="product__item" href="">
+                        <img src="assets/img/img-listing/option 6.png" alt="image">
+                    </a>
+                    <a class="product__item" href="">
+                        <img src="assets/img/img-listing/option 5.png" alt="image">
+                    </a>
+                    <a class="product__item" href="">
+                        <img src="assets/img/img-listing/option 7.png" alt="image">
+                    </a>
+                    <a class="product__item" href="">
+                        <img src="assets/img/img-listing/option 5.png" alt="image">
+                    </a>
+                    <a class="product__item" href="">
+                        <img src="assets/img/img-listing/option 7.png" alt="image">
+                    </a>
+                    <a class="product__item" href="">
+                        <img src="assets/img/img-listing/option 5.png" alt="image">
+                    </a>
+                    <a class="product__item" href="">
+                        <img src="assets/img/img-listing/option 6.png" alt="image">
+                    </a>
+                    <a class="product__item" href="">
+                        <img src="assets/img/img-listing/option 5.png" alt="image">
+                    </a>
+                </div>
+                <div class="position mt-16 row row-center col-center">
+                    <svg class="icon--pos">
+                        <use xlink:href="sprite.svg#Rectangle 45"></use>
+                    </svg>
+                    <svg class="icon--pos">
+                        <use xlink:href="sprite.svg#Rectangle 45 (1)"></use>
+                    </svg>
+                    <svg class="icon--pos">
+                        <use xlink:href="sprite.svg#Rectangle 45 (1)"></use>
+                    </svg>
+                    <svg class="icon--pos">
+                        <use xlink:href="sprite.svg#Rectangle 45 (1)"></use>
+                    </svg>
+                </div>
+            </div>
+
+            <!-- phan nav dang fixed -->
+            <div class="listing--fixed row row-center col-between">
+                <ul class="grid c-3 m-3 l-3">
+                    <li><a href="#">Metal</a></li>
+                    <li><a href="#">Stone</a></li>
+                    <li><a href="#">Shape</a></li>
+                    <li><a href="#">Price</a></li>
+                </ul>
+                <div class="btn btn--secondary listing--fixed__btn">
+                    <div class=" icon__item">
+                        <svg class="icon--ractangle">
+                            <use xlink:href="sprite.svg#Rectangle 39"></use>
+                        </svg>
+                        <svg class="icon--dot">
+                            <use xlink:href="sprite.svg#Ellipse 13"></use>
+                        </svg>
+                    </div>
+                    <div class="icon__item">
+                        <svg class="icon--ractangle">
+                            <use xlink:href="sprite.svg#Rectangle 39"></use>
+                        </svg>
+                        <svg class="icon--dot icon--dot2">
+                            <use xlink:href="sprite.svg#Ellipse 13"></use>
+                        </svg>
+                    </div>
+                    <div class="icon__item">
+                        <svg class="icon--ractangle">
+                            <use xlink:href="sprite.svg#Rectangle 39"></use>
+                        </svg>
+                        <svg class="icon--dot icon--dot3">
+                            <use xlink:href="sprite.svg#Ellipse 13"></use>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+
+            <!-- phan nav fixed hien len khi su dung nav fixed cua mobile va tablet -->
+            <div class="listing__category--mobile listing__main__category">
+                <div id="down" class="icon-top">
+                    <svg class="icon-down">
+                        <use xlink:href="sprite.svg#down-mobile"></use>
+                    </svg>
+                </div>
+                <div class="category__main mt-28">
+                    <!-- phan title muc tim kiem lon -->
+                    <div class="category__main__head mt-32-c mt-32-m row row-center col-between">
+                        <span>Stone</span>
+                        <svg class="icon-minus">
+                            <use xlink:href="sprite.svg#minus"></use>
+                        </svg>
+                    </div>
+                    <!-- phan cac muc tim kiem lon -->
+                    <div class="category__main__content mt-28">
+                        <div class="content__item">
+                            <div class="item__head row row-center col-between">
+                                <div class="item__head__title row row-center">
+                                    <svg class="icon-list">
+                                        <use xlink:href="sprite.svg#Rectangle 52"></use>
+                                    </svg>
+                                    <p>Diamond</p>
+                                </div>
+                                <svg class="icon--down">
+                                    <use xlink:href="sprite.svg#Vector 11"></use>
+                                </svg>
+                            </div>
+                            <!-- phan danh sach duong link san pham theo mau sac icon -->
+                            <ul class="item__content mt-28">
+                                <li class="item__content--link row row-center">
+                                    <div class="checkbox checkbox--now">
+                                        <svg class="icon-round">
+                                            <use xlink:href="sprite.svg#checkbox"></use>
+                                        </svg>
+                                        <svg class="icon-dot">
+                                            <use xlink:href="sprite.svg#Rectangle 45"></use>
+                                        </svg>
+                                    </div>
+                                    <a class="row row-center" href="">
+                                        White diamond
+                                        <img src="assets/img/img-listing/image 58.png" alt="image">
+                                    </a>
+                                </li>
+                                <li class="item__content--link row row-center mt-16">
+                                    <div class="checkbox">
+                                        <svg class="icon-round">
+                                            <use xlink:href="sprite.svg#checkbox"></use>
+                                        </svg>
+                                        <svg class="icon-dot">
+                                            <use xlink:href="sprite.svg#Rectangle 45"></use>
+                                        </svg>
+                                    </div>
+                                    <a class="row row-center" href="">
+                                        Black diamond
+                                        <img src="assets/img/img-listing/image 59.png" alt="image">
+                                    </a>
+                                </li>
+                                <li class="item__content--link row row-center mt-16">
+                                    <div class="checkbox">
+                                        <svg class="icon-round">
+                                            <use xlink:href="sprite.svg#checkbox"></use>
+                                        </svg>
+                                        <svg class="icon-dot">
+                                            <use xlink:href="sprite.svg#Rectangle 45"></use>
+                                        </svg>
+                                    </div>
+                                    <a class="row row-center" href="">
+                                        Yellow diamond
+                                        <img src="assets/img/img-listing/image 60.png" alt="image">
+                                    </a>
+                                </li>
+                                <li class="item__content--link row row-center mt-16">
+                                    <div class="checkbox">
+                                        <svg class="icon-round">
+                                            <use xlink:href="sprite.svg#checkbox"></use>
+                                        </svg>
+                                        <svg class="icon-dot">
+                                            <use xlink:href="sprite.svg#Rectangle 45"></use>
+                                        </svg>
+                                    </div>
+                                    <a class="row row-center" href="">
+                                        Blue diamond
+                                        <img src="assets/img/img-listing/image 61.png" alt="image">
+                                    </a>
+                                </li>
+                                <li class="item__content--link row row-center mt-16">
+                                    <div class="checkbox">
+                                        <svg class="icon-round">
+                                            <use xlink:href="sprite.svg#checkbox"></use>
+                                        </svg>
+                                        <svg class="icon-dot">
+                                            <use xlink:href="sprite.svg#Rectangle 45"></use>
+                                        </svg>
+                                    </div>
+                                    <a class="row row-center" href="">
+                                        Green diamond
+                                        <img src="assets/img/img-listing/image 62.png" alt="image">
+                                    </a>
+                                </li>
+                                <li class="item__content--link row row-center mt-16">
+                                    <div class="checkbox">
+                                        <svg class="icon-round">
+                                            <use xlink:href="sprite.svg#checkbox"></use>
+                                        </svg>
+                                        <svg class="icon-dot">
+                                            <use xlink:href="sprite.svg#Rectangle 45"></use>
+                                        </svg>
+                                    </div>
+                                    <a class="row row-center" href="">
+                                        Brown diamond
+                                        <img src="assets/img/img-listing/image 63.png" alt="image">
+                                    </a>
+                                </li>
+                                <li class="item__content--link row row-center mt-16">
+                                    <div class="checkbox">
+                                        <svg class="icon-round">
+                                            <use xlink:href="sprite.svg#checkbox"></use>
+                                        </svg>
+                                        <svg class="icon-dot">
+                                            <use xlink:href="sprite.svg#Rectangle 45"></use>
+                                        </svg>
+                                    </div>
+                                    <a class="row row-center" href="">
+                                        Lab grown diamond
+                                        <img src="assets/img/img-listing/image 64.png" alt="image">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- phan cac muc tim kiem lon -->
+                    <div class="category__main__content mt-28">
+                        <div class="content__item">
+                            <div class="item__head row row-center col-between">
+                                <div class="item__head__title row row-center">
+                                    <svg class="icon-list">
+                                        <use xlink:href="sprite.svg#Rectangle 52"></use>
+                                    </svg>
+                                    <p>Precious stones</p>
+                                </div>
+                                <svg class="icon--down rotate90">
+                                    <use xlink:href="sprite.svg#Vector 11"></use>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- phan cac muc tim kiem lon -->
+                    <div class="category__main__content mt-28">
+                        <div class="content__item">
+                            <div class="item__head row row-center col-between">
+                                <div class="item__head__title row row-center">
+                                    <svg class="icon-list">
+                                        <use xlink:href="sprite.svg#Rectangle 52"></use>
+                                    </svg>
+                                    <p>Semi-pecious stones</p>
+                                </div>
+                                <svg class="icon--down rotate90">
+                                    <use xlink:href="sprite.svg#Vector 11"></use>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- phan cac muc tim kiem lon -->
+                    <div class="category__main__content mt-28">
+                        <div class="content__item">
+                            <div class="item__head row row-center col-between">
+                                <div class="item__head__title row row-center">
+                                    <svg class="icon-list">
+                                        <use xlink:href="sprite.svg#Rectangle 52"></use>
+                                    </svg>
+                                    <p>Swarowski crystal</p>
+                                </div>
+                                <svg class="icon--down rotate90">
+                                    <use xlink:href="sprite.svg#Vector 11"></use>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="listing__category--mobile__btn mt-32-c mt-32-m grid c-6 m-6 ">
+                    <div id="cancel" class="btn btn--secondary">
+                        Cancel
+                    </div>
+                    <div class="btn btn--primary">
+                        Apply
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <footer id="footer">
+            <!-- phan dau footer -->
+            <div class="footer__header row row-center col-evenly">
+                <div class="footer__header--item row row-center col-between">
+                    <div class="icon--back">
+                        <svg class="icon--main">
+                            <use xlink:href="sprite.svg#Rectangle 122"></use>
+                        </svg>
+                        <svg class="icon--arrow">
+                            <use xlink:href="sprite.svg#arrow-back"></use>
+                        </svg>
+                    </div>
+                    <h6>60 Day Return Policy</h6>
+                </div>
+                <div class="footer__header--item row row-center">
+                    <div class="icon--change">
+                        <div class="icon--change--top">
+                            <svg class="icon--main">
+                                <use xlink:href="sprite.svg#Vector 45"></use>
+                            </svg>
+                            <svg class="icon--arrow">
+                                <use xlink:href="sprite.svg#arrow-back"></use>
+                            </svg>
+                        </div>
+                        <div class="icon--change--bottom">
+                            <svg class="icon--main">
+                                <use xlink:href="sprite.svg#Vector 45"></use>
+                            </svg>
+                            <svg class="icon--arrow">
+                                <use xlink:href="sprite.svg#arrow-back"></use>
+                            </svg>
+                        </div>
+                    </div>
+                    <h6>Free shipment & return</h6>
+                </div>
+                <div class="footer__header--item row row-center">
+                    <div class="icon--save">
+                        <svg class="icon--main">
+                            <use xlink:href="sprite.svg#Rectangle 47"></use>
+                        </svg>
+                        <svg class="icon--star">
+                            <use xlink:href="sprite.svg#Star 3"></use>
+                        </svg>
+                    </div>
+                    <h6>Lifetime Warranty</h6>
+                </div>
+                <div class="footer__header--item row row-center">
+                    <div class="icon--last">
+                        <div class="icon--last--main">
+                            <svg class="icon--cheo">
+                                <use xlink:href="sprite.svg#cheo"></use>
+                            </svg>
+                        </div>
+                        <div class="icon--last--arrow">
+                            <svg class="icon--arrow1">
+                                <use xlink:href="sprite.svg#arrow-top-right"></use>
+                            </svg>
+                            <svg class="icon--arrow2">
+                                <use xlink:href="sprite.svg#arrow-bottom-right"></use>
+                            </svg>
+                            <svg class="icon--arrow3">
+                                <use xlink:href="sprite.svg#arrow-bottom-left"></use>
+                            </svg>
+                            <svg class="icon--arrow4">
+                                <use xlink:href="sprite.svg#arrow-top-left"></use>
+                            </svg>
+                        </div>
+                    </div>
+                    <h6>60 Day Resizing Policy</h6>
+                </div>
+
+                <div class="footer__header__close close">
+                    <svg class="icon--close">
+                        <use xlink:href="sprite.svg#close"></use>
+                    </svg>
+                </div>
+
+            </div>
+            <!-- phan footer voi contact -->
+            <div class="footer__contact main__contact grid grid-center">
+                <label for="contact--mail--footer" class="main__contact--central">
+                    <h2>Subscribe to our newsletters</h2>
+                    <p>Sign up now for our newsletter and get £10 off your next order</p>
+                    <div class="contact--mail main__contact--central--mail row row-center">
+                        <input id="contact--mail--footer" type="mail" placeholder="Email">
+                        <div class="btn btn--input btn--input--footer">
+                            <svg class="icon">
+                                <use xlink:href="sprite.svg#Vector 11 white"></use>
+                            </svg>
+                        </div>
+                    </div>
+                </label>
+            </div>
+            <!-- phan footer mang xa hoi -->
+            <div class="footer__social row row-center">
+                <div class="footer__social__item row row-center">
+                    <img src="assets/img/img -footer/image 73.png" alt="image 73">
+                </div>
+                <div class="footer__social__item row row-center">
+                    <img src="assets/img/img -footer/image 74.png" alt="image 73">
+                </div>
+                <div class="footer__social__item row row-center">
+                    <img src="assets/img/img -footer/image 83.png" alt="image 73">
+                </div>
+                <div class="footer__social__item row row-center">
+                    <img src="assets/img/img -footer/image 82.png" alt="image 73">
+                </div>
+                <div class="footer__social__item row row-center">
+                    <img src="assets/img/img -footer/image 78.png" alt="image 73">
+                </div>
+                <div class="footer__social__item row row-center">
+                    <img src="assets/img/img -footer/image 75.png" alt="image 73">
+                </div>
+                <div class="footer__social__item row row-center">
+                    <img src="assets/img/img -footer/image 77.png" alt="image 73">
+                </div>
+                <div class="footer__social__item row row-center">
+                    <img src="assets/img/img -footer/image 81.png" alt="image 73">
+                </div>
+                <div class="footer__social__item row row-center">
+                    <img src="assets/img/img -footer/image 76.png" alt="image 76">
+                </div>
+                <div class="footer__social__item row row-center">
+                    <img src="assets/img/img -footer/image 80.png" alt="image 73">
+                </div>
+                <div class="footer__social__item row row-center">
+                    <img src="assets/img/img -footer/image 79.png" alt="image 73">
+                </div>
+            </div>
+            <!-- phan footer list -->
+            <div class="footer__list mt-60 mt-20-m mt-20-c grid l-4-8 m-12 c-12 grid-end">
+                <div class="footer__list__name">
+                    <div class="name row row-end">
+                        <svg class="icon icon--name">
+                            <use xlink:href="sprite.svg#VectorG"></use>
+                        </svg>
+
+                        <svg class="icon icon--name">
+                            <use xlink:href="sprite.svg#VectorL"></use>
+                        </svg>
+
+                        <svg class="icon icon--name">
+                            <use xlink:href="sprite.svg#VectorA"></use>
+                        </svg>
+
+                        <svg class="icon icon--name">
+                            <use xlink:href="sprite.svg#VectorM"></use>
+                        </svg>
+
+                        <svg class="icon icon--name">
+                            <use xlink:href="sprite.svg#VectorI"></use>
+                        </svg>
+
+                        <svg class="icon icon--name">
+                            <use xlink:href="sprite.svg#VectorR"></use>
+                        </svg>
+
+                        <svg class="icon icon--name">
+                            <use xlink:href="sprite.svg#VectorA"></use>
+                        </svg>
+                    </div>
+                    <div class="revew mt-28 row row-center">
+                        <span>Revew</span>
+                        <div class="revew__star row row-center">
+                            <svg class="icon--star">
+                                <use xlink:href="sprite.svg#Star 5"></use>
+                            </svg>
+                            <svg class="icon--star">
+                                <use xlink:href="sprite.svg#Star 5"></use>
+                            </svg>
+                            <svg class="icon--star">
+                                <use xlink:href="sprite.svg#Star 5"></use>
+                            </svg>
+                            <svg class="icon--star">
+                                <use xlink:href="sprite.svg#Star 5"></use>
+                            </svg>
+                            <svg class="icon--star">
+                                <use xlink:href="sprite.svg#Star 5"></use>
+                            </svg>
+                            4.7
+                        </div>
+                    </div>
+                    <div class="social mt-24 row row-center">
+                        <div class="icon--social">
+                            <svg class="icon--around">
+                                <use xlink:href="sprite.svg#border"></use>
+                            </svg>
+                            <svg class="icon--center">
+                                <use xlink:href="sprite.svg#XMLID_835_"></use>
+                            </svg>
+                        </div>
+                        <div class="icon--social">
+                            <svg class="icon--around">
+                                <use xlink:href="sprite.svg#border"></use>
+                            </svg>
+                            <svg class="icon--center">
+                                <use xlink:href="sprite.svg#white_background"></use>
+                            </svg>
+                        </div>
+                        <div class="icon--social">
+                            <svg class="icon--around">
+                                <use xlink:href="sprite.svg#border"></use>
+                            </svg>
+                            <svg class="icon--center">
+                                <use xlink:href="sprite.svg#instagram-out"></use>
+                            </svg>
+                            <svg class="icon--instagram--on--round">
+                                <use xlink:href="sprite.svg#instagram-on-round"></use>
+                            </svg>
+                            <svg class="icon--dot--instagram">
+                                <use xlink:href="sprite.svg#instagram-dot"></use>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__list--desc grid mt-20-m mt-20-c l-3 m-4 c-6">
+                    <div class="footer__list--desc__item">
+                        <a href="">Help & FAQ</a>
+                        <a href="">Ring sizing</a>
+                        <a href="">Guides & Education</a>
+                    </div>
+                    <div class="footer__list--desc__item">
+                        <a href="">About Us</a>
+                        <a href="">Delivery & Return</a>
+                        <a href="">Payment</a>
+                    </div>
+                    <div class="footer__list--desc__item">
+                        <a href="">sustainability</a>
+                        <a href="">Benefits</a>
+                        <a href="">Contact Us</a>
+                    </div>
+                    <div class="footer__list--desc__item item--img">
+                        <a href="">Badges</a>
+                        <div class="item--img--doupble row row-end">
+                            <a href="">
+                                <img src="assets/img/img -footer/Screenshot 2022-08-24 at 21.10 1 (1).png"
+                                    alt="img footer">
+                            </a>
+                            <a href="">
+                                <img src="assets/img/img -footer/Screenshot 2022-08-24 at 21.10 2 (1).png"
+                                    alt="img footer">
+                            </a>
+                        </div>
+                        <a href="">
+                            <img src="assets/img/img -footer/Screenshot 2022-08-24 at 21.10 3 (1).png" alt="img footer">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- phan footer copy right -->
+            <div class="footer__copy--right grid grid l-8-4 m-12 c-12">
+                <div class="footer__copy--right__item grid grid-row-center l-8-4 m-8-4 c-8-4">
+                    <div class="row row-center">
+                        <img src="assets/img/img -footer/image 92 (1).png" alt="image 92">
+                        <a href="">
+                            <h6>Choose your country</h6>
+                        </a>
+                    </div>
+                    <div class="footer__copy--right__item--time">
+                        <span>Glamira 2008 - 2022</span>
+                    </div>
+                </div>
+                <div class="footer__copy--right__item mt-12-m mt-12-c row col-between">
+                    <a href="">Terms & Conditions</a>
+                    <a href="">Privacy Policy</a>
+                    <a href="">Imprint</a>
+                    <a href="">Sitemap</a>
+                </div>
+            </div>
+        </footer>
+
+        <!-- phan phu len toan bo trang khi bat menu mobile trang listing -->
+        <div class="listing__cover"></div>
+    </div>
+</body>
+<script data-main="./assets/js/main.js" src="./assets/js/require.js" defer></script>
+
+
+</html>

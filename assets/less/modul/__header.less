@@ -1,0 +1,339 @@
+@heightHeaderTop: 58px;
+@heightHeaderBottom: 52px;
+#header {
+  padding: 0 32px;
+  border-bottom: 1px solid @color-border;
+}
+// phan header phia tren cung
+.header--main {
+  width: 100%;
+  height: @heightHeaderTop;
+}
+// phan header ben trai
+.header--main__nav {
+  flex: 1;
+  ul {
+    width: 100%;
+    height: 100%;
+    li {
+      height: 100%;
+      &:hover a {
+        .hover-blur();
+      }
+    }
+    li:first-child {
+      position: relative;
+      a {
+        opacity: 1;
+        cursor: default;
+      }
+      &::after {
+        content: "";
+        position: absolute;
+        border-bottom: 1px solid @color-border-nav;
+        width: 110%;
+        bottom: -30%;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+  }
+  // phan nut menu tren header mobile
+  .header--main__nav--mobile {
+    .icon__home {
+      padding-right: 16px;
+    }
+    .acount {
+      .icon--user {
+        margin-right: 12px;
+      }
+      p {
+        font-weight: 500;
+      }
+    }
+  }
+}
+// phan ten glamira
+.header__logo {
+  flex: 1;
+  max-width: 800px;
+  .icon--text {
+    width: 3rem;
+    height: 3rem;
+  }
+}
+// phan header ben phai
+.header--main__extends {
+  flex: 1;
+
+  .extends--icon {
+    width: 200px;
+    justify-content: flex-end;
+    color: @icon-color;
+    li,
+    a {
+      height: 100%;
+    }
+    li + li a {
+      margin-left: 25px;
+    }
+
+    .icon--heart {
+      position: relative;
+      top: 10%;
+      width: 20px;
+      height: 19px;
+    }
+
+    &--bag {
+      display: inline-block;
+      position: relative;
+      width: 16px;
+      height: 100%;
+      &--top {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 16px;
+        height: 8px;
+      }
+      &--down {
+        position: absolute;
+        bottom: 10%;
+        width: 16px;
+        height: 16px;
+      }
+    }
+  }
+}
+.extends--lang {
+  a {
+    padding: 0 12px;
+    display: block;
+    position: relative;
+    &:hover {
+      .hover-blur();
+    }
+  }
+  li + li a::before {
+    content: "";
+    position: absolute;
+    height: 12px;
+    border-left: 1px solid @color-border;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 100%;
+  }
+  li:first-child a {
+    cursor: default;
+    opacity: 0.6 !important;
+  }
+}
+//   phan header nav phia duoi
+.header--sub {
+  height: @heightHeaderBottom;
+  ul {
+    height: 100%;
+    a {
+      display: inline-block;
+      padding: 0 20px;
+      font-weight: 500;
+      line-height: @line-height;
+      &:hover {
+        opacity: 0.6;
+        transition: 0.4s;
+      }
+    }
+    li:first-child a {
+      padding-left: 0;
+    }
+  }
+}
+
+// phan header nav mobile
+.header__nav--mobile {
+  .header__nav--mobile__title {
+    li {
+      font-size: @font-12;
+      font-weight: 500;
+      line-height: @line-height-120;
+      padding: 10px 0;
+      cursor: pointer;
+      p {
+        max-inline-size: 82px;
+      }
+    }
+  }
+}
+// phan menu mobile khi click vao menu
+.menu--mobile {
+  display: none;
+  inline-size: 100%;
+  min-block-size: 100vh;
+  background-color: @color-white;
+  position: fixed;
+  z-index: 6;
+  top: 0;
+  left: 0;
+  animation: show 0.3s ease-in forwards;
+  font-size: 1.75rem;
+  &__header {
+    font-weight: 500;
+    background-color: @color-blur;
+    .menu--mobile__acount {
+      padding: 16px 20px;
+    }
+  }
+  .menu--mobile__header__close {
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    .icon--close {
+      inline-size: 12px;
+      block-size: 12px;
+    }
+  }
+  .acount {
+    .icon--user {
+      margin-right: 12px;
+    }
+  }
+
+  // phan nav cua menu mobile
+  &__header__nav {
+    padding: 8px 0;
+    font-size: 1.5rem;
+    li {
+      cursor: pointer;
+    }
+    p {
+      display: inline-block;
+      max-width: min-content;
+      text-align: center;
+    }
+  }
+
+  // phan list cua menu mobile
+  &__header__list {
+    padding: 0 20px;
+    li {
+      border: none;
+    }
+  }
+  // phan login
+  .login {
+    font-weight: 500;
+    padding: 24px 20px;
+    &__icon {
+      padding-right: 14px;
+      .icon--right {
+        width: 12px;
+        height: 15px;
+      }
+      &--arrow {
+        margin-left: -8px;
+        .icon-23 {
+          inline-size: 6px;
+          block-size: 2.5px;
+        }
+        .icon-24 {
+          inline-size: 3px;
+          block-size: 3px;
+          margin-left: -1px;
+        }
+      }
+    }
+  }
+}
+
+// phan responsive cua header
+@media (min-width: 1024px) {
+  .icon__home,
+  .search--mobile {
+    display: none;
+  }
+
+  .header--main__nav {
+    min-inline-size: 400px;
+  }
+}
+
+@media (max-width: 1023px) {
+  #header {
+    background-color: @color-white;
+    padding: 0 20px;
+    min-block-size: @heightHeaderTop; //phan header co chieu cao bang header top
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 5;
+  }
+
+  .header--sub {
+    display: none; //cho hidden phan header duoi
+  }
+
+  .header--main__nav ul {
+    display: none;
+  }
+
+  .header--main__extends {
+    .extends--lang {
+      display: none;
+    }
+    .header--main--right__icon {
+      inline-size: 100%;
+      flex-direction: row-reverse;
+    }
+
+    .extends--icon {
+      inline-size: 100%;
+      .icon--user {
+        display: none;
+      }
+      .extends--icon--search {
+        display: none;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  // cho logo nho hon
+  .header__logo {
+    .icon--text {
+      width: 2.4rem;
+      height: 2.4rem;
+    }
+  }
+  // cho icon bag gan icon heart hon
+  .header--main__extends {
+    .extends--icon li + li a {
+      margin-left: 16px;
+    }
+  }
+}
+
+// phan animation
+@keyframes show {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+// phan js
+// class de hien menu mobile
+.show {
+  display: block;
+}
+
+.hidden {
+  display: none;
+}

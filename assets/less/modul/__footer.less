@@ -1,0 +1,172 @@
+#footer {
+  margin-top: 70px;
+}
+
+// phan header cua footer
+.footer__header {
+  background-color: @color-red;
+  padding: 16px 0;
+  position: relative;
+  &--item {
+    max-inline-size: 220px;
+    h6 {
+      color: @color-white;
+      font-size: @font-primary;
+      margin-left: 12px;
+    }
+  }
+}
+
+// phan contact cua footer
+.footer__contact {
+  background-color: unset;
+  h2,
+  p {
+    color: @text-color;
+  }
+
+  .contact--mail {
+    background-color: @color-white;
+    .border();
+    .border--radius();
+  }
+  .btn--input--footer {
+    background-color: @text-color;
+  }
+}
+
+// phan footer social
+.footer__social {
+  margin: 0 @padding-main;
+  padding: 30px 0;
+  .border--top();
+  .border--bottom();
+  &__item {
+    padding: 0 2.5%;
+    position: relative;
+  }
+
+  &__item:first-child {
+    padding-left: 0;
+  }
+
+  &__item + .footer__social__item::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    height: 16px;
+    border-left: 1px solid @color-border;
+  }
+}
+
+// phan footer with logo
+.footer__list {
+  background-color: @color-white;
+  padding: 0 32px 60px;
+  .icon--name {
+    height: 3rem;
+    max-width: 3.5rem;
+  }
+  .icon--name + .icon--name {
+    margin-left: -4px;
+  }
+  .revew {
+    span {
+      font-size: @font-16;
+      font-weight: @bold;
+      padding-right: 12px;
+    }
+    .icon--star {
+      width: 9px;
+      height: 9px;
+      padding: 0 4px;
+    }
+  }
+  .social {
+    .icon--social {
+      padding-right: 8px;
+    }
+  }
+  &--desc__item {
+    a {
+      display: block;
+      font-weight: @bold;
+    }
+    a + a {
+      margin-top: 24px;
+    }
+  }
+  .item--img {
+    &--doupble {
+      position: relative;
+      top: -10px;
+      a + a {
+        padding-left: 10px;
+      }
+    }
+  }
+}
+
+// phan copyright
+.footer__copy--right {
+  padding: 20px @padding-main;
+}
+.footer__copy--right__item {
+  h6 {
+    font-size: @font-primary;
+  }
+  img {
+    padding-right: 12px;
+  }
+}
+
+// phan responsive footer
+@media (min-width: 1024px) {
+}
+
+@media (max-width: 1023px) {
+  // phan header cua footer
+  .footer__header {
+    &--item:nth-child(2n + 1) {
+      display: none;
+    }
+    // nut close to hon
+    .close {
+      inline-size: 20px;
+      block-size: 20px;
+    }
+  }
+  // phan footer social
+  .footer__social {
+    flex-wrap: wrap;
+    padding: 0;
+    padding-bottom: 16px;
+    &__item {
+      padding-right: 14px;
+      padding-top: 16px;
+    }
+    &__item + .footer__social__item::after {
+      display: none; //an het phan gach ngan cach
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  // phan header cua footer
+  .footer__header {
+    &--item {
+      display: none;
+    }
+
+    &--item:nth-child(2) {
+      display: flex;
+    }
+    // nut close to hon
+    .close {
+      inline-size: 20px;
+      block-size: 20px;
+    }
+  }
+}

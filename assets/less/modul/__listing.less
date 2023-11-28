@@ -1,0 +1,750 @@
+.app__listing {
+  #header {
+    ul.header--sub__nav {
+      li:first-child {
+        a {
+          opacity: 0.7;
+          cursor: default; //dang o trang ring thi link ring bi mo di
+        }
+      }
+    }
+  }
+}
+
+#listing {
+  padding: 0 @padding-main;
+  font-size: @font-14-c;
+}
+
+// phan vi tri cua tran listing
+.listing__post {
+  font-size: @font-12-c;
+  padding: 0;
+  .main__section--text {
+    padding: 0;
+    ul {
+      li {
+        a {
+          color: @color-category-product;
+        }
+        &:last-child a {
+          color: @text-color;
+        }
+      }
+    }
+  }
+}
+
+// phan gioi thieu chung ve listing page
+.listing--general {
+  &__item--text {
+    font-size: @font-12-c;
+    .item--text__nav--sale {
+      cursor: pointer;
+      font-size: @font-14-c;
+      font-weight: 500;
+      padding-right: 24px;
+    }
+  }
+  &__image {
+    margin-left: -@padding-main;
+    margin-right: -@padding-main;
+  }
+  img {
+    inline-size: 100%;
+  }
+  .item--text__nav a:hover {
+    .hover-blur();
+  }
+}
+
+// phan listing voi dieu huong
+.listing__nav {
+  margin: 0 -@padding-main;
+  li {
+    .border--bottom-s();
+    &:first-child {
+      border-color: @color-border-nav;
+    }
+    &:hover a {
+      .hover-blur();
+    }
+  }
+  a {
+    display: inline-block;
+    padding: 12px 0;
+    font-weight: 500;
+    span {
+      font-size: @font-12-c;
+      font-weight: 400;
+    }
+  }
+  //   phan san pham
+  .listing__nav__product {
+    position: relative;
+    padding-left: @padding-main;
+    .prev,
+    .next {
+      width: 50px;
+      height: 50px;
+      position: absolute;
+      z-index: 5;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    .prev {
+      left: 0;
+    }
+
+    .next {
+      right: 0;
+    }
+    a {
+      transition: 0.3s;
+      &:hover {
+        .hover-up();
+      }
+    }
+  }
+  .product__app--js {
+    overflow: auto; //phai set over follow de co the dung scrollleft in js
+    overflow: -moz-hidden-unscrollable;
+    &::-webkit-scrollbar {
+      width: 0 !important;
+      display: none;
+    }
+  }
+  .product__item {
+    display: inline-block;
+    min-inline-size: 115px;
+    min-block-size: 115px;
+    margin-right: 3px;
+    padding: 0;
+    font-size: @font-12-c;
+    text-align: center;
+    img {
+      inline-size: calc(100% - @font-12-c);
+    }
+  }
+}
+// phan category cua trang
+// an phan category pc tren mobile
+.listing__main__category {
+  display: none;
+  inline-size: 300px;
+  padding-right: 20px;
+  padding-right: @padding-main;
+  font-weight: 500;
+  max-block-size: 1238px;
+  overflow: auto;
+  overflow: -moz-hidden-unscrollable; // cho list nav co the cuon duoc
+  &::-webkit-scrollbar {
+    width: 0 !important;
+    display: none;
+  }
+  a {
+    font-weight: 500;
+    &:hover {
+      .hover-blur();
+    }
+  }
+  .icon-minus {
+    width: 12px;
+    height: 1px;
+  }
+  img {
+    width: 20px;
+    height: 16px;
+    margin-left: 10px;
+  }
+  .category__head {
+    span {
+      opacity: 0.6;
+    }
+    .icon--close {
+      width: 10px;
+      height: 10px;
+      margin-right: 14px;
+    }
+    &__foot {
+      font-weight: 400;
+      .border--bottom-s();
+    }
+  }
+  .category__main {
+    &__head {
+      cursor: pointer;
+    }
+    &__content {
+      inline-size: 80%;
+      .item__head {
+        cursor: pointer;
+      }
+      .icon-list {
+        width: 4px;
+        height: 4px;
+        margin-right: 12px;
+      }
+    }
+    span {
+      font-weight: @bold;
+    }
+    .icon--down {
+      width: 10px;
+      height: 10px;
+      transform: rotate(-90deg);
+    }
+    .erect {
+      position: relative;
+      left: 16px;
+    }
+  }
+  .category__main--close {
+    padding: 12px 0;
+    .border--bottom();
+  }
+  .category__main--dest {
+    opacity: 0.3;
+    border: none;
+    .category__main__head {
+      cursor: default;
+    }
+  }
+  .category__foot {
+    span {
+      display: block;
+      text-align: center;
+      opacity: 0.5;
+      font-size: @font-12;
+    }
+  }
+}
+
+// phan list san pham
+.listing__list {
+  &__head {
+    font-size: @font-14-c;
+    font-weight: 500;
+    p {
+      padding-right: 10px;
+    }
+    .head__nav {
+      min-inline-size: 273px;
+    }
+    // phan lua chon trong head list san pham
+    .head__nav--op {
+      p {
+        padding-right: 12px;
+      }
+    }
+    .icon-specical {
+      inline-size: 32px;
+      block-size: 32px;
+      margin-right: 12px;
+      cursor: pointer;
+      position: relative;
+      .border-s();
+      .border--radius();
+      border-color: @color-border-nav;
+      .icon--s {
+        position: absolute;
+        top: 7px;
+        left: 9px;
+        inline-size: 8px;
+        block-size: 4px;
+      }
+      .icon--l {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        inline-size: 17px;
+        block-size: 14px;
+      }
+    }
+
+    .rotate-90 {
+      opacity: 0.3;
+    }
+
+    // phan lua chon dang danh sach dai
+    .head__nav--list {
+      justify-content: end;
+      span {
+        color: @color-category-product;
+        padding-right: 8px;
+      }
+      .icon {
+        padding-bottom: 8px;
+        inline-size: 10px;
+        block-size: 10px;
+        transform: rotate(90deg);
+      }
+    }
+  }
+  //   phan list voi san pham
+  .listing__list__product {
+    padding: 0;
+    .product--item {
+      .box-shadow-product();
+      &:hover {
+        .hover-up();
+      }
+    }
+    p {
+      line-height: @line-height-120;
+    }
+    .item__inf__extend {
+      font-size: @font-12-c;
+      font-weight: 300;
+      p {
+        margin-top: 4px;
+        opacity: 0.5;
+      }
+      .icon-question {
+        margin-left: 4px;
+      }
+    }
+  }
+}
+
+// phan listing voi img
+.produc--item__img {
+  position: relative;
+  img {
+    inline-size: 100%;
+    filter: brightness(80%);
+  }
+  h4 {
+    color: @color-white;
+    position: absolute;
+    bottom: 40px;
+    left: 20px;
+  }
+}
+.img--mobile {
+  grid-column: 1 / 3;
+}
+.img--pc,
+.img--pc-full,
+.img--tablet {
+  display: none; // an tren mobile
+}
+
+// phan cuoi cua list san pham
+.listing__nav--last {
+  span {
+    font-size: @font-12-c;
+    display: block;
+    text-align: center;
+    p {
+      display: inline-block;
+      position: relative;
+      &::after {
+        position: absolute;
+        content: "";
+        bottom: -10px;
+        left: 0;
+        .border--bottom();
+        border-color: @color-border-nav;
+        inline-size: 30%;
+      }
+    }
+  }
+  nav {
+    max-inline-size: 206px;
+    margin: 26px auto 0 auto;
+    font-size: @font-14-c;
+    font-weight: @bold;
+    cursor: pointer;
+  }
+  .icon {
+    inline-size: 10px;
+    block-size: 10px;
+    transform: rotate(90deg);
+    padding-bottom: 14px;
+  }
+}
+
+// phan cuoi cua trang list
+.listing__list--small {
+  overflow: hidden;
+  .product__item {
+    min-inline-size: 105px;
+    min-block-size: 105px;
+    &:hover {
+      .hover-up();
+    }
+    img {
+      inline-size: 100%;
+    }
+  }
+}
+
+// phan fixed trang listing
+.listing--fixed {
+  .border-s();
+  border-color: @color-blur;
+  .box-shadow();
+  background-color: @color-white;
+  position: fixed;
+  z-index: 3;
+  top: 80%;
+  left: 0;
+  right: 0;
+  ul {
+    flex: 1;
+    li {
+      text-align: center;
+
+      a {
+        display: inline-block;
+        inline-size: 100%;
+        padding: 16px 0;
+        font-weight: 500;
+      }
+      &:last-child a {
+        opacity: 0.4;
+        cursor: default;
+      }
+    }
+  }
+  .icon__item {
+    display: inline-block;
+    width: 18px;
+    height: 4px;
+    margin: 1px 0;
+    display: flex;
+    align-items: center;
+    .icon--ractangle {
+      width: 18px;
+      height: 1.5px;
+    }
+    .icon--dot {
+      width: 4px;
+      height: 4px;
+      transform: translateX(-8px);
+    }
+    .icon--dot2 {
+      transform: translateX(-4px);
+    }
+    .icon--dot3 {
+      transform: translateX(-10px);
+    }
+  }
+  //   nut
+  .btn--secondary {
+    background-color: @text-color;
+    padding: 14px 14px;
+  }
+}
+
+//phan category an cua mobile
+.listing__category--mobile {
+  max-block-size: 70vh;
+  overflow: auto;
+  overflow: -moz-hidden-unscrollable;
+  overflow: -moz-hidden-unscrollable; //phan pc cho container san pham co the cuon duoc
+  &::-webkit-scrollbar {
+    width: 0 !important;
+    display: none;
+  }
+  &.listing__main__category {
+    display: block;
+  }
+  .block-menu-mobile-outline();
+  background-color: @color-blur;
+  padding: 0 @padding-main;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 7;
+  animation: hiddenMenuListing ease 0.4s forwards;
+  .icon-top {
+    width: 80px;
+    height: 30px;
+    display: grid;
+    place-items: center;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .icon-down {
+    width: 40px;
+    height: 8px;
+  }
+  .icon-minus {
+    display: none;
+  }
+
+  .category__main {
+    inline-size: 80%;
+    margin: 0 auto;
+  }
+  // an category mobile
+  @keyframes hiddenMenuListing {
+    to {
+      opacity: 0;
+      transform: translateY(100%);
+    }
+  }
+}
+
+// phan phu len toan bo trang khi bat menu mobile trang listing
+.listing__cover {
+  display: none;
+  position: fixed;
+  z-index: 6;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-color: @icon-color;
+  opacity: 0.8;
+  animation: showListingCover ease 0.03s forwards;
+  transform-origin: 50% 0;
+  transition: 0.03s;
+  @keyframes showListingCover {
+    from {
+      transform: scale(0);
+      opacity: 0;
+    }
+    to {
+      scale: 1;
+      opacity: 0.8;
+    }
+  }
+}
+
+// phN responsive
+@media (max-width: 768px) {
+  // tren mobile va tablet category rong full
+  .listing__category--mobile {
+    inline-size: calc(100% - 2 * @padding-main);
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1023px) {
+  #listing {
+    font-size: @font-primary;
+    line-height: @line-height;
+    a {
+      font-size: @font-primary;
+    }
+  }
+
+  // phan listing voi category dieu huong
+  .listing__nav {
+    a span {
+      font-size: @font-12;
+    }
+  }
+
+  // tren mobile va tablet category rong full
+  .listing__main__category {
+    inline-size: calc(100% - 2 * @padding-main);
+  }
+
+  // phan list san pham
+  .listing__list {
+    .main--best--product {
+      gap: 32px;
+      .item__inf__extend {
+        p {
+          font-size: @font-12;
+        }
+      }
+    }
+  }
+  // phan list san pham
+  .listing__list {
+    .img--mobile {
+      grid-column: 1 / 4;
+      filter: brightness(100%);
+      order: unset;
+    }
+    .img--tablet--hidden {
+      display: none;
+    }
+    .img--tablet {
+      display: block;
+      grid-column: 1 / 3;
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  #listing {
+    font-size: @font-primary;
+    line-height: @line-height;
+    a {
+      font-size: @font-primary;
+    }
+    .icon--pos {
+      width: 1rem;
+      height: 1rem;
+    }
+  }
+  // phan gioi thieu chung ve listing page
+  .listing--general {
+    &--text {
+      max-inline-size: 500px;
+      h1 {
+        font-size: @font-h1;
+      }
+    }
+    &__item--text {
+      font-size: @font-20;
+      line-height: @line-height;
+      a,
+      .item--text__nav--sale {
+        font-size: @font-12;
+      }
+    }
+    &__image {
+      margin: 0;
+    }
+    img {
+      inline-size: 100%;
+    }
+  }
+
+  // phan listing voi dieu huong
+  .listing__nav {
+    margin: 0;
+    ul {
+      max-inline-size: 200px;
+    }
+    //   phan san pham
+    .listing__nav__product {
+      padding-left: 0;
+    }
+    a span {
+      font-size: @font-12;
+    }
+  }
+
+  // phan category cua trang
+  .listing__main__category {
+    display: block;
+  }
+
+  // phan list san pham
+  .listing__list {
+    &__head {
+      font-size: @font-primary;
+    }
+    //   phan list voi san pham
+    &__product {
+      max-block-size: 1238px;
+      overflow: auto;
+      overflow: -moz-hidden-unscrollable;
+      overflow: -moz-hidden-unscrollable; //phan pc cho container san pham co the cuon duoc
+      &::-webkit-scrollbar {
+        width: 0 !important;
+        display: none;
+      }
+    }
+    .img--mobile {
+      display: none;
+    }
+
+    .img--pc,
+    .img--pc-full {
+      display: block;
+    }
+
+    .img--pc-full {
+      grid-column: 1 / 4;
+      filter: brightness(100%);
+      order: 1;
+    }
+    .main--best--product {
+      gap: 32px;
+      .item__inf__extend {
+        p {
+          font-size: @font-12;
+        }
+      }
+    }
+  }
+
+  // phan cuoi cua list san pham
+  .listing__nav--last {
+    nav {
+      margin-top: 50px;
+    }
+  }
+
+  // phan cuoi cua trang list
+  .listing__list--small {
+    .product__item {
+      min-inline-size: 200px;
+      min-block-size: 200px;
+    }
+  }
+
+  // phan fixed tren pc khong co
+  .listing--fixed {
+    display: none;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1439px) {
+  // phan list san pham
+  .listing__list {
+    .img--pc-full {
+      grid-column: 1 / 5;
+      filter: brightness(100%);
+      order: unset;
+    }
+    .main--best--product {
+      gap: 32px;
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+}
+
+@media (min-width: 1440px) {
+  // phan list san pham
+  .listing__list {
+    .img--pc-full {
+      grid-column: 2 / 6;
+      filter: brightness(100%);
+      order: 2;
+    }
+    .main--best--product {
+      gap: 32px;
+    }
+  }
+}
+
+// phan phuc vu js
+.show {
+  display: block;
+}
+
+.show-category {
+  animation: showMenuListing forwards;
+}
+// hien menu mobile
+@keyframes showMenuListing {
+  from {
+    transform: translate(0, 100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.transform {
+  transform: translateX(-115px);
+  transition: transform ease 1s;
+}
