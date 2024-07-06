@@ -7,7 +7,7 @@
 </head>
 <body>
     <h1>Form trong iFrame</h1>
-    <form action="/submit" method="POST">
+    <form id="myForm" action="/submit" method="POST">
         <input type="text" name="username" placeholder="Tên người dùng">
         <!-- Trường ẩn để chứa referrer -->
         <input type="hidden" id="referrer" name="referrer">
@@ -22,6 +22,21 @@
         if (referrer) {
             document.getElementById('referrer').value = referrer;
         }
+
+        // Thêm sự kiện submit vào form
+        document.getElementById('myForm').addEventListener('submit', function(event) {
+            // Ngăn chặn hành động mặc định của form
+            event.preventDefault();
+
+            // Lấy giá trị của referrer
+            var referrerValue = document.getElementById('referrer').value;
+
+            // Log giá trị của referrer
+            console.log('Referrer:', referrerValue);
+
+            // Sau khi log, nếu bạn muốn thực hiện submit thật sự, hãy bỏ dòng event.preventDefault();
+            // this.submit();
+        });
     </script>
 </body>
 </html>
