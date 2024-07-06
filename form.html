@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form trong iFrame</title>
+</head>
+<body>
+    <h1>Form trong iFrame</h1>
+    <form action="/submit" method="POST">
+        <input type="text" name="username" placeholder="Tên người dùng">
+        <!-- Trường ẩn để chứa referrer -->
+        <input type="hidden" id="referrer" name="referrer">
+        <button type="submit">Submit</button>
+    </form>
+
+    <script>
+        // Lấy giá trị referrer từ parent document
+        var referrer = parent.document.referrer;
+
+        // Đặt giá trị referrer vào input hidden
+        if (referrer) {
+            document.getElementById('referrer').value = referrer;
+        }
+    </script>
+</body>
+</html>
